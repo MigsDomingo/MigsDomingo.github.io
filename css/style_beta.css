@@ -1,0 +1,502 @@
+/* 
+Accessories and Suplies Depot Inc.
+*/
+
+/*
+Index Page
+==========================
+*/
+
+
+/* Global */
+/* Called global because throughout the page */
+
+/* Header */
+/*
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*removed ul and li here*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*
+ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*
+
+body {
+	margin: 0px;
+	border: 0px;
+	display: inline-block;
+}
+*/
+/*
+div {
+	outline:#e8491d 1px solid;
+
+}
+*/
+#global {
+
+	/*position: absolute;*/
+	/*white-space: nowrap;
+    overflow: hidden;*/
+}
+
+#home {
+	width: 100%;
+	float: left;
+
+}
+
+#home_top_left {
+	float: left;
+	width: 50%;
+
+
+}
+
+#branding {
+	display: inline-block;
+	padding-top:2em;
+	padding-left:15em;
+}
+
+#branding #logo {
+	max-width: 25%;
+	display: inline-block;
+}
+
+#branding h1 {
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-family: Roboto, sans-serif;		
+	color: #f44141;
+	width: 100%;
+}
+
+#main_desc_1 {
+	padding-top: 7em;
+	padding-left: 15em;
+	padding-bottom: 4em;
+}
+
+#main_desc_1 p{
+	font-family: Roboto, sans-serif;
+	font-size: 32px;
+	line-height: 1.5em;
+	padding-bottom: 0;
+	display: inline-block;
+}
+
+#home_top_right {
+	float: left;
+	width: 50%;
+	min-height: 720px;
+
+}
+
+/*
+.container {
+	border:#e8491d 1px solid;
+}
+*/
+
+#main_desc_2 {
+	display: inline-block;
+	/*outline:#e8491d 1px solid;*/
+	margin-top: 0px;
+	/*padding-top:2em;*/
+
+	width:100%;
+	height: 100%;
+	background-image: url(../images/People.svg), url(../images/Tongue.svg);
+	background-repeat: no-repeat; 
+	background-size: auto 70%, auto 100%;
+	/*background-position: bottom, center;*/
+}
+
+#main_desc_2 img {
+}
+
+#main_desc_2 ul li {
+	display: inline-block;
+}
+
+#main_desc_2 ul li a{
+	display: inline-block;
+	color:#000000;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+	font-family: Roboto, sans-serif;
+	margin: 3em 3em 0 3em;
+	min-height: 720px;
+
+}
+
+#sub_desc_1 {
+	padding-left: 15em;
+	padding-bottom: 2em;
+}
+
+#sub_desc_1 p{
+	font-size: 18px;
+	font-family: Roboto, sans-serif;
+	line-height: 2em;
+	color: #e8491d;
+}
+
+#sub_desc_1 button {
+	border-radius: 30px;
+	border: 2px solid #f44242;
+	background: #f44242;
+	color: white;
+	font-size: 18px;
+	padding: 1em;
+	width: 10em;
+}
+
+#sub_desc_1 hr {
+	margin-right: 2em;
+	margin-top: 6em;
+	margin-bottom: 0em;
+	height: 5px;
+	border: none;
+	color: #f9f9f9;
+	background-color: #f9f9f9;
+}
+
+#home_extension {
+	/* based from min height of image, and its padding to the top */
+	/*padding-top: 54em;*/
+	
+	width: 100%;
+	float: left;
+	/*order:#e8491d 1px solid;*/
+
+}
+
+#home_extension_left {
+	float: left;
+	width: 45%;
+	/*
+	border:#e8491d 1px solid;
+*/
+}
+
+#home_extension_left #products_desc {
+
+	float: left;
+	/*order:#e8491d 1px solid;*/
+	width: 45%;
+
+}
+
+#home_extension_left #products_desc p {
+	margin-top: 1em;
+	margin-left: 6em;
+	margin-bottom: 1em;
+	font-family: Roboto, sans-serif;
+	font-size: 36px;
+	color: #750000;
+}
+
+#home_extension #home_extension_left #products_desc nav ul li {
+	margin-left: 8.5em;
+	font-size: 24px;
+	font-family: Roboto, sans-serif;
+}
+
+
+#home_extension_left #products_desc button{
+	margin-left: 13em;
+	margin-top: 2em;
+	border-radius: 500px;
+	border: 2px solid #f44242;
+	background: #f44242;
+	color: white;
+	font-size: 16px;
+	padding: 1em;
+	width: 10em;
+
+}
+
+#home_extension_left #services_desc {
+	float: left;
+	width: 45%;
+
+}
+
+#home_extension_left #services_desc p {
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom: 1em;
+	font-family: Roboto, sans-serif;
+	font-size: 36px;
+	color: #750000;
+}
+
+#home_extension_left #services_desc li{
+	margin-left: 3em;
+	font-size: 24px;
+	font-family: Roboto, sans-serif;
+}
+
+#home_extension_left #services_desc button{
+	margin-top: 3.1em;
+	margin-left: 4em;
+	border-radius: 25px;
+	border: 2px solid #f44242;
+	background: #f44242;
+	color: white;
+	font-size: 16px;
+	padding: 1em;
+	width: 10em;
+}
+
+#home_extension_right {
+	/*float: right;*/
+	/*white-space: nowrap;*/
+	float: left;
+	width: 50%;
+	/*display: inline-block;*/
+}
+
+#home_extension_right #sub_desc_2 p {
+	margin-top: 1em;
+	font-family: Roboto, sans-serif;
+	font-size: 48px;
+	color: #750000;
+}
+
+#home_extension_right #sub_desc_2 li {
+	list-style: none;
+}
+
+
+#home_extension_right #sub_desc_2 img {
+	float: left;
+	display: inline;
+	padding: 40px;
+	min-height: 50px;
+	min-width: 100px;
+	max-width: 175px;
+	max-height: 200px;
+}
+
+#banner #banner_desc {
+	width: 100%;
+	float: left;
+	background-color: #f44242;
+	min-height: 400px;
+}
+
+#banner #banner_desc p{
+	margin-top: 2em;
+	margin-left: 5em;
+	color: white;
+	font-size:  48px;
+	font-family:  Roboto, sans-serif;
+	background-color: #f44242;
+	min-height: 400px;
+}
+
+#customer_reviews {
+	width: 100%;
+	float: left;
+}
+
+#customer_reviews p {
+	margin-top: 2em;
+	margin-left: 5em;
+	color: #680000;
+	font-size: 48px;
+}
+
+#inquiry_desc {
+	float: left;
+	margin-left: 10em;
+	margin-bottom: 5em;
+	width: 80%;
+	min-height: 480px;
+	background-color: black;
+}
+
+#inquiry_desc_left {
+	float: left;
+	width: 30%;
+	min-height: 480px;
+}
+
+#inquiry_desc #inquiry_desc_left p{
+	margin-left: 3em;
+	margin-top: 1em;
+	color: white;
+	font-size: 48px;
+	font-family: Roboto, sans-serif;
+}
+
+#inquiry_desc_right {
+	float: left;
+}
+
+#inquiry_desc_right input[name=Name]{
+	font-size: 24px;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 0.5em;
+	display: inline;
+	min-height: 1em;
+	width: 400px;
+	font-family: Roboto, sans-serif;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+}
+
+#inquiry_desc_right input[name=Purpose]{
+	margin-right: 1em;
+	margin-top: 2em;
+	font-size: 24px;
+	min-height: 1em;
+	width: 480px;
+	display: inline;
+	font-family: Roboto, sans-serif;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+}
+
+#inquiry_desc_right input[name=Email]{
+	width: 93%;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	display: block;
+	font-size: 24px;
+	font-family: Roboto, sans-serif;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+}
+
+#inquiry_desc_right textarea{
+	display: block;
+	width: 93%;
+	font-size: 24px;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	height: 180px;
+	font-family: Roboto, sans-serif;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+#inquiry_desc_right #button_div {
+	text-align: center;	
+}
+
+#inquiry_desc_right #button_div button {
+	width: 30%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-size: 36px;
+	font-family: Roboto, sans-serif;
+	text-align: center;
+
+	border-radius: 30px;
+	border: 2px solid #f44242;
+	background: #f44242;
+	color: white;
+	font-size: 18px;
+	padding: 1em;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px) {
+
+	body {
+		display: none;
+	}
+}
+
+
+
+/* for the links*/
+/* text-decoration removes underline*/
+/* Upper case in css */
+
+
+/* padding: top right bottom left */
+
+/* Showcase */
+/* -400 scrolls the picture down */
+
+/* Newsletter */
+
+/* Boxes */
+
+/* Sidebar */
+
+/* Main-col */
+
+
+/* Services */
+
+
+/* Media Queries */

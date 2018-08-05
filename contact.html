@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accessories and Supplies Depot Inc.</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <!-- Can potential slow, only use if necessary 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  
+  <!-- imbedded css version
+  <style type="text/css">
+   
+  </style>
+  -->
+  </head>
+  <body>
+
+  <!-- Start -->
+  <div id="global">
+      <div id="header_div">
+          <header>
+            <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                  document.getElementsByTagName("header")[0].style.top = "0";
+                  document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
+                  document.getElementsByTagName("header")[0].style.transition = "0.3s";
+                  //document.getElementById("header_div").style.top = "100px;";
+                } else {
+                  document.getElementsByTagName("header")[0].style.top = "-120px";
+                  //document.getElementById("header_div").style.top = "-120px";
+                }
+                prevScrollpos = currentScrollPos;
+              }
+          </script>
+              <div id="brand">
+                <a href="index.html">
+                  <img id="logo" src="./images/asdi-logo.svg">
+                </a>
+                <h1 id="brand_subtitle">ACCESSORIES AND SUPPLIES DEPOT INC.</h1>
+              </div>
+              <div id="navigation">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                          <li><a href="printer_rental.html">PRINTER RENTAL</a></li>
+                          <li><a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">PRINTING SERVICE</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li class="current"><a href="contact.html">CONTACT US</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div id="navigation_mobile">
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                      <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
+                      <i class="fa fa-bars" id="menu_section"></i>
+
+                      <div id="side_menu" class="side_nav">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="printer_rental.html">Printer Rental</a>
+                        <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+
+                      <!-- <script type="text/javascript"> -->
+                      <script>
+                          function toggleSlideMenu() {
+                              console.log(document.getElementById('side_menu').style.width);
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  console.log(document.getElementById('side_menu').style.width);
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+          </header>
+      </div>
+      <body>
+          <div id="showcase_about">
+              <div id="p_1">
+                  <p class="title">Contact Us</p>
+              </div>
+              <div id="p_2">
+                  <p class="subtitle">Inquiries? Suggestions? Comments? We'd love to hear from you.</p>
+              </div>
+          </div> 
+          <!-- showcase div ends-->
+
+          <div id="gmap_location_office">
+              <div id="gmap_ofc_left">
+                  <p class="title">Accessories & Supplies Depot Inc (Main Office)</p>
+                  <p class="subtitle">Address</p>
+                  <p class="small_text">110 Labo Street (3.84 km) 1114 Quezon City, Philippines</p>
+
+                  <p class="subtitle">Phone</p>
+                  <p class="small_text">(02) 516 2133</p>
+
+                  <p class="subtitle">Email</p>
+                  <p class="small_text">asdi@email.com</p>
+              </div>
+              <a href="https://goo.gl/maps/rHaNgKtZRjE2" target="_blank" id="gmap_ofc_right">
+              </a>
+          </div> 
+
+          <div id="gmap_location_shop">
+              <div id="gmap_shop_left">
+                  <p class="title">ASDI Digital Printing (Print Shop)</p>
+                  <p class="subtitle">Address</p>
+                  <p class="small_text">Mervin Terraces, G/F P., 980 Ocampo St, Malate, Manila, 1004 Metro Manila</p>
+                  <p class="subtitle">Phone</p>
+                  <p class="small_text">(02) 742 2947</p>
+                  <p class="subtitle">Email</p>
+                  <p class="small_text">asdiprint@email.com</p>
+              </div>
+
+              <a href="https://goo.gl/maps/GdYTwDk4N3o" target="_blank" id="gmap_shop_right">
+              </a>
+              </div>
+          </div> 
+
+          <!-- showcase div ends-->
+
+          <div id="inquiry_form">
+              <p class="title">Inquire now!</p>
+              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+              <div id="name_input">
+                  <input  type="text" name="Name" placeholder="Name">
+              </div>
+              <div id="purpose_input">
+                  <input  type="text" name="Purpose" placeholder="Select Purpose">
+              </div>
+              <div id="email_input">
+                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div id="message_input">
+                  <textarea id="message_input" placeholder="Message"></textarea>
+              </div>
+              <div id="button_inquiry">
+                <button class="red">Send Now</button>
+              </div>
+          </div>
+      </body>
+
+      
+  </div>
+ 
+  </body>
+  <footer id="footer">
+      <div id="left_footer">
+      <img id="logo" src="./images/asdi-logo.svg">
+      <p>Copyright 2018 All Rights Reserved.</p>
+      <!-- facebook and google maps:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+      -->
+      </div>
+      <div id="right_footer">
+          <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>
+          <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="google_maps_icon_footer"></a>
+      </div>
+  </footer>
+</html>

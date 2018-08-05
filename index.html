@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accessories and Supplies Depot Inc.</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <!-- Can potential slow, only use if necessary 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- imbedded css version
+  <style type="text/css">
+   
+  </style>
+  -->
+  </head>
+  <body>
+  
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <div id="global">
+      <div id="header_div">
+          <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                  document.getElementsByTagName("header")[0].style.top = "0";
+                  document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
+                  document.getElementsByTagName("header")[0].style.transition = "0.3s";
+                  //document.getElementById("header_div").style.top = "100px;";
+                } else {
+                  document.getElementsByTagName("header")[0].style.top = "-120px";
+                  //document.getElementById("header_div").style.top = "-120px";
+                }
+                prevScrollpos = currentScrollPos;
+              }
+          </script>
+          <header>
+              <div id="brand">
+                <a href="index.html">
+                  <img id="logo" src="./images/asdi-logo.svg">
+                </a>
+                <h1 id="brand_subtitle">ACCESSORIES AND SUPPLIES DEPOT INC.</h1>
+              </div>
+              <div id="navigation">
+                  <nav>
+                      <ul>
+                          <li class="current" id="home_nav"><a href="index.html">HOME</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                          <li><a href="printer_rental.html">PRINTER RENTAL</a></li>
+                          <li><a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">PRINTING SERVICE</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div id="navigation_mobile">
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                      <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
+                      <i class="fa fa-bars" id="menu_section"></i>
+
+                      <div id="side_menu" class="side_nav">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="printer_rental.html">Printer Rental</a>
+                        <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+
+                      <!-- <script type="text/javascript"> -->
+                      <!--
+                      <script>
+                          function toggleSlideMenu() {
+                              console.log(document.getElementById('side_menu').style.width);
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                                  document.getElementById('navigation_mobile').style.width = '100%';
+                                  document.getElementById('navigation_mobile').style.textAlign = 'right';
+                              }
+                          }
+                      </script> -->
+
+                      <script>
+                          function toggleSlideMenu() {
+                              if (document.getElementsByTagName("header")[0].style.width.indexOf('%') > 0){
+                                  document.getElementsByTagName("header")[0].style.width = '0';
+                              }
+                              else {
+                                  document.getElementsByTagName("header")[0].style.width = '100%';
+                                  document.getElementsByTagName("header")[0].style.textAlign = 'right';
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+          </header>
+      </div>
+      <body>
+            <div id="showcase">
+                <script>
+                    var background_position;
+                    var header = $('#showcase');
+                    adjustBackground();
+                    $(window).resize(adjustBackground);
+
+                    function adjustBackground() {
+                        if ($(window).width() <= 515) {
+                            background_position = "10px 450px";
+                        }
+                        else {
+                            background_position = "right";
+                        }
+                    }
+
+                    $(document).ready(function(){
+                      //var header = $('body');
+                      var backgrounds = new Array(
+                        'url(./images/home_page_brother.png)',
+                        'url(./images/home_page_canon.png)',
+                        'url(./images/home_page_epson.png)',
+                        'url(./images/home_page_hp.png)'
+                      );
+
+                      var current = 0;
+                      function nextBackground() {
+                          current++;
+                          current = current % backgrounds.length;
+                          header.css({
+                            //'background': 'linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0.2)), ' + backgrounds[current],
+                            'background-image': backgrounds[current],
+                            'background-size': 'contain',
+                            'background-repeat': 'no-repeat',
+                            'background-position': background_position,
+                            'transition' : 'background-image 1s ease-in-out',
+                            'height' : '700px'
+                          });
+                        //    'transition' : 'background-image 2s ease-in-out'
+                        
+                      }
+                      setInterval(nextBackground, 2000);
+                      //nextBackground();
+                      //header.css('background-image', backgrounds[0]);
+                      nextBackground();
+                    });
+                    </script>
+              <div id="showcase_text">
+                <div id="p_1">
+                    <p class="title">Your one-stop shop for quality printers and inks, at the best cost</p>
+                </div>
+                <div id="p_2">
+                    <p class="subtitle">Providing printers for anyone and everyone.</p>
+                </div>
+                <div id="p_3">
+                    <p class="small_text">
+                        Indie creative? Solo entrepreneur sourcing for products? Big multinational billionaire industry looking for bulk printers? We got you covered.
+                    </p>
+                    <p class="small_text"></p>
+                    <p class="small_text"></p>
+                </div>
+                <div id="button_1">
+                    <button class="red" id="get_started">GET STARTED</button>
+                    <script>
+                          $("#get_started").click(function() {
+                              console.log(1);
+                              $('html,body').animate({
+                                  scrollTop: $("#product_printer").offset().top},
+                                  'slow');
+                          });
+                    </script>
+                </div>
+              </div>
+            </div> 
+          <!-- showcase div ends-_dot-->
+
+          <!-- product_printer: header, body, footer -->
+          <div id="product_printer">
+              <div id="product_printer_header">
+                  <p class="title">Our products and services</p>
+                  <div id="product_printer_header_menu">
+                      <div id="printer">
+                          <p>Printers</p>
+                          <img src="images/icons/icon_printer.svg"> 
+                      </div>
+                      <div id="printer_inks">
+                          <p>Printer Inks and Toners</p>
+                          <img src="images/icons/icon_ink.svg"> 
+                      </div>
+                      <div id="printer_rental">
+                          <p>Printer Rental</p>
+                          <img src="images/icons/icon_rent_printer.svg"> 
+                      </div>
+                      <div id="printer_service">
+                          <p>Printing Service</p>
+                          <img src="images/icons/icon_printed.svg"> 
+                      </div>
+                      <div id="other_hardware">
+                          <p>Other Hardware</p>
+                          <img src="images/icons/icon_other_services.svg"> 
+                      </div>
+                      <div id="temp_placeholder">
+                        
+                      </div>
+                  </div>
+              </div>
+              <div id="product_printer_body">
+                  <div id="left">
+                      <p class="title">Our top selling products.</p>
+                      <div id="product_printer_body_p">
+                          <p class="subtitle">Your best choice at the best market price. For bulk orders and retail.</p>
+                      </div>
+                      <div id="product_printer_body_buttons">
+                          <button class="white" id="products_button_1">VIEW PRODUCTS</button>
+                          <button class="red" id="inquire_button2">INQUIRE NOW</button>
+                          <script>
+                          $("#products_button_1").click(function() {
+                              window.location.href = "products.html";
+                          });
+                          $("#inquire_button2").click(function() {
+                              $('html,body').animate({
+                                  scrollTop: $("#inquiry_form").offset().top},
+                                  'slow');
+                          });
+                      </script>
+                      </div>
+                  </div>
+                  <div id="right">
+                      <div id="north_west">
+                          <img src="./printer_images/Epson_L360.jpg">
+                          <div class="block">
+                            <span class="circle_dot">1</span>
+                            <p>Epson L360 All-in-One Ink Tank Printer</p>
+                          </div>
+                      </div>
+                      <div id="north_east">
+                          <img src="./printer_images/dcp-t710w.jpg">
+                          <div class="block">
+                              <span class="circle_dot">2</span>
+                              <p>Brother DCP-T710W Multi-Function Wireless Printer</p>
+                          </div>
+                      </div>
+                      <div id="south_west">
+                          <img src="./printer_images/hp-gt5810.jpg">
+                          <div class="block">
+                              <span class="circle_dot">3</span>
+                              <p>HP GT 5810 Multi-Function CIS Printer</p>
+                          </div>
+                      </div>
+                      <div id="south_east">
+                          <img src="./printer_images/hp 2135 ink advantage.jpg">
+                          <div class="block">
+                              <span class="circle_dot">4</span>
+                              <p>HP 2135 Multi Function Ink Advantage Printer</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="product_printer_footer">
+                  <p class="title">Our Trusted Partners</p>
+                  <div id="logos">
+                      <div class="logo_div">
+                          <img id="logo1" src="./images/canon_logo.svg">
+                      </div>
+                      <div class="logo_div">
+                          <img src="./images/epson_logo.svg">
+                      </div>
+                      <div class="logo_div">
+                          <img src="./images/hp_logo.svg">
+                      </div>
+                      <div class="logo_div">                
+                          <img src="./images/brother_logo.svg">
+                      </div>
+                  </div>
+                  <!-- <img src="./images/seagate_logo.svg"> -->
+              </div>
+          </div>
+          <!-- product_printer div ends-->
+          
+          <div id="service_info">
+              <div id="left">
+                  <div id="service_info_p_buffer">
+                      <p class="title">Need something printed?</p>
+                  </div>
+                  <p class="subtitle">We also offer the following print services at </p>
+                  <p class="subtitle">ASDI Digital Printing:</p>
+                  <p class="small_text">A3 Colored Printing</p>
+                  <p class="small_text">Security with microprint technology</p>
+                  <p class="small_text">Photocopying</p>
+                  <p class="small_text">Business Cards</p>
+                  <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="leftmost"></a>
+                  <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="middle"></a>
+                  <a id="messenger" target="_blank" href="https://m.me/janet.c.kiu"> 
+                      <span> 
+                        <i class="fab fa-facebook-messenger fa-3x" id="right"></i>
+                      <!-- <a href="#" class="fab fa-facebook-messenger fa-2x" id="right"></a> -->
+                      <!-- <a href="#" class="fab fa-facebook-messenger fa-2x" id="right"></a> -->
+                        <p>CONTACT VIA MESSENGER</p>
+                      <!--</span>-->
+                  </a>
+              </div><div id="right">
+              </div>
+              
+          </div>
+
+          <div id="rental_info">
+              <div id="left">
+                
+                  <img src="./printer_images/MFCJ3530.jpg">
+              </div>
+              <div id="right">
+                  <div id="title_div">
+                    <p class="title">Need a printer for only a short period of time?</p>
+                  </div>
+                  <div id="subtitle_div">
+                    <p class="subtitle">Try our newest
+                      <span class="subtitle_red">Printer Rental Service!</span>
+                    </p>
+                    <p class="subtitle">Print all you can for your selected time period</p>
+                  </div>
+
+                  <div id="button_div">
+                      <button class="white_red_border" id="rental_button1">MORE DETAILS</button>
+                      <button class="red" id="inquire_button1">INQUIRE</button>
+                      <script>
+                        $("#rental_button1").click(function() {
+                              window.location.href = "printer_rental.html";
+                          });
+                          $("#inquire_button1").click(function() {
+                              $('html,body').animate({
+                                  scrollTop: $("#inquiry_form").offset().top},
+                                  'slow');
+                          });
+                      </script>
+                  </div>
+              </div>
+          </div>
+
+          <div id="customer_reviews">
+              <p class="title">Customer Reviews</p>
+              <div class="moving_review active_div" id="first_review">
+                  <p class="small_text">"Flexible terms and flexible budget. Their sales rep has great service and quick to respond."</p>
+                  <p class="subtitle">Mrs A.T.</p>
+              </div>
+
+              <div class="moving_review" id="second_review">
+                  <p class="small_text">"Got my money’s worth with wortking with them. Printers arrived in excellent condition."</p>
+                  <p class="subtitle">Mr. J.T.</p>
+              </div>
+
+              <div class="moving_review" id="third_review">
+                  <p class="small_text">"Their personalizes printer delivery service made it convenient to handle our multiple branches." 
+                  <p class="subtitle">Alonsco Holdings</p>
+              </div>
+              <span id="circle_buttons">
+                  <span class="dot active" id="first_dot"></span>
+                  <span class="dot" id="second_dot"></span>
+                  <span class="dot" id="third_dot"></span>
+              </span>
+
+              <!-- Javascript to handle dot behavior -->
+              <script type="text/javascript">
+                  var dotArea = document.getElementById("circle_buttons");
+                  var dots = dotArea.getElementsByClassName("dot");
+                  for (var i = 0; i < dots.length; i++) {
+                      dots[i].addEventListener("click", function() {
+                          var current = document.getElementsByClassName("active");
+                          current[0].className = current[0].className.replace(" active", "");
+                          this.className += " active";
+
+                          // Based on selected dot, show review text
+                          var current_review = document.getElementsByClassName("active_div");
+                          current_review[0].className = current_review[0].className.replace(" active_div", ""); 
+                          switch(this.id){
+                              case "first_dot":
+                                  document.getElementById("first_review").className += " active_div";
+                                  break;
+                              case "second_dot":
+                                  document.getElementById("second_review").className += " active_div";
+                                  break;
+                              case "third_dot":
+                                  document.getElementById("third_review").className += " active_div";
+                                  break;
+                              case "fourth_dot":
+                                  document.getElementById("fourth_review").className += " active_div";
+                                  break;
+                              case "fifth_dot":
+                                  document.getElementById("fifth_review").className += " active_div";
+                                  break;
+
+                          }
+                      });
+                  }
+              </script>
+          </div>
+
+          <form action="form_test.php" method="post">
+              <div id="inquiry_form">
+                  <p class="title">Inquire now!</p>
+                  <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+                  <div id="name_input">
+                      <input  type="text" name="Name" placeholder="Name">
+                  </div>
+                  <div id="purpose_input">
+                      <input  type="text" name="Purpose" placeholder="Purpose">
+                      <!--<span class="dropbtn">
+                          <p>Purpose</p>
+                          <img src="./images/black_downpointing_triangle.svg">
+                          <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                          </div>
+                      </span> -->
+                      <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
+                  </div>
+                  <div id="email_input">
+                      <input id="email_input" type="text" name="Email" placeholder="Email Address">
+                  </div>
+                  <div id="message_input">
+                      <textarea id="message_input" placeholder="Message"></textarea>
+                  </div>
+                  <div id="button_inquiry">
+                    <button class="red">SEND NOW</button>
+                  </div>
+              </div>
+          </form>
+      </body>
+
+      
+  </div>
+  </body>
+  <footer id="footer">
+      <div id="left_footer">
+      <img id="logo" src="./images/asdi-logo.svg">
+      <p>Copyright 2018 All Rights Reserved.</p>
+      <!-- facebook and google maps:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+      -->
+      </div>
+      <div id="right_footer">
+          <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>
+          <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="google_maps_icon_footer"></a>
+      </div>
+  </footer>
+</html>

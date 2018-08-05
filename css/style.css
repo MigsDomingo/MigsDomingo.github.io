@@ -1,0 +1,1437 @@
+/* 
+Accessories and Suplies Depot Inc.
+*/
+
+
+/*Light red: #ff4545
+
+Dark red: #750000
+
+Medium red: #d64e4e;
+Customer review: d8e5e5;
+dark blue gray: a9b5ae;
+*/
+/*
+End Reset
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* Global */
+
+#global {
+	max-width: 1920px;
+	margin:auto;
+	overflow-x: hidden; 
+	overflow-y: hidden; 
+}
+
+
+p {
+	font-family: Roboto, sans-serif;
+
+}
+p.title {
+	font-size: 36px;
+	font-weight: 100;
+	line-height: 48px;
+	color: #a9b5ae;
+}
+
+p.subtitle {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+span.subtitle_red {
+	color: #ff4545;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+p.small_text {
+	line-height: 24px;
+}
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button.red {
+	margin-left: 10px;
+	margin-top: 2em;
+	border-radius: 30px;
+	border: 2px solid #ff4545;
+	background: #ff4545;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 1em;
+	width: 12em;
+}
+
+button.white {
+	margin-left: 80px;
+	margin-top: 2em;
+	border-radius: 30px;
+	border: 2px solid #ffffff;
+	background: #ffffff;
+	color: #ff4545;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 1em;
+	width: 12em;
+}
+
+button.white_red_border {
+	margin-left: 80px;
+	margin-top: 2em;
+	border-radius: 30px;
+	border: 1px solid #ff4545;
+	background: white;
+	color: #ff4545;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 1em;
+	width: 12em;
+}
+
+button.red_white_border {
+	margin-top: 2em;
+	border-radius: 30px;
+	border: 1px solid white;
+	background: #d64e4e;
+	color: white;
+	font-size: 16px;
+	font-color: white;
+	font-weight: bold;
+	padding: 1em;
+	width: 12em;
+}
+
+.circle_dot {
+
+	height: 50px;
+	width: 50px;
+	background-color: #ff4545;
+	color: white;
+	border-radius: 50%;
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+  	font-size: 26px;
+  	line-height: 50px;
+  	text-align: center;
+}
+
+
+/* font awesome icons*/
+
+.fa, .fab{
+  padding: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  /*margin: 5px 2px;*/
+  border-radius: 50%;
+}
+
+.fa:hover, .fab:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook-f {
+  /*background: #3B5998;
+  color: white;*/
+  background: white;
+  color: #ff4545;
+}
+
+.fa-map-marker {
+  /*background: #3B5998;
+  color: white;*/
+  background: white;
+  color: #ff4545;
+}
+
+.fa-facebook-messenger {
+  /*background: #3B5998;
+  color: white;*/
+  padding: 0px;
+  background: white;
+  color: #ff4545;
+}
+
+div {
+	/*border:#e8491d 1px solid;*/
+
+}
+/* Header */
+
+header{
+	text-decoration: none;
+	/*display: inline;*/
+	width: 100%;
+	display: inline-block;
+	position: fixed;
+}
+
+h1 {
+	font-weight: normal;
+	/*display: inline-block;*/
+	/*display: block;*/
+	font-size: 12px;
+	font-family: Roboto, sans-serif;		
+	color: #ff4545;
+	/*width: 100%;*/	
+}
+/* Brand */
+#brand {
+	margin-top: 40px;
+	margin-left: 80px;
+	/*display: inline-block;*/
+	display: inline-block;
+	text-align: left;
+	width: 25%;
+	/*float: left;*/
+
+}
+
+#header_div {
+	margin-bottom: 120px;
+}
+
+#navigation{
+	/*display: inline-block;*/
+	/*text-align: right;*/
+	/*width: 71%;*/
+	margin-right: 20px;
+	float: right;
+	/*text-align: right;*/
+	/*margin: auto;*/
+	font-weight: 500;
+	/*float: left;*/
+	/*width: 70%;*/
+	/*vertical-align: top;*/
+	/*margin-right: 80px;*/
+}
+
+#navigation ul{
+	float: right;
+	list-style-type: none;
+	list-style: none;
+	padding-left: 0;
+}
+
+#navigation li{
+	font-size: 14px;
+	font-family: Roboto, sans-serif;		
+	color: #ff4545;
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+#navigation li#home_nav {
+	margin-left: 0px;
+}
+
+#navigation a{
+	font-family: Roboto, sans-serif;
+	text-decoration: none;
+	/*color: black;*/
+}
+
+#navigation a:visited{
+	color: #ff4545;
+	/*color: black;*/
+}
+
+#navigation a:hover {
+	/*color: #ff4545;*/
+}
+
+#navigation .current a{
+	color: #ff4545;
+	font-weight: bold;
+}
+
+#brand_mobile {
+	display: none;
+}
+
+#navigation_mobile {
+	display: none;
+}
+
+#showcase {
+	min-height: 400px;
+	/*background-size: cover;*/
+	/*transition: background-image 2.5s ease-in-out;*/
+	/*background: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0.2)), url('../images/home_page_brother.png') ;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;*/
+}
+
+#showcase p {
+	margin-left: 80px;
+}
+
+#showcase #p_1{
+	padding-top: 4em;
+	max-width: 500px;
+}
+
+#showcase #p_1 p.title{
+	font-weight: 350;
+}
+
+#showcase #p_2{
+	max-width: 500px;
+}
+
+#showcase #p_3{
+	max-width: 500px;
+}
+
+#showcase #button_1 button {
+	margin-left: 80px;
+	font-size: 14px;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
+
+}
+
+#showcase_text {
+	height: 800px;
+	background: linear-gradient(to left ,rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+#product_printer p.title {
+	color: #750000;
+	text-align: center;
+}
+
+#product_printer_header p.title {
+	margin-top: 50px;
+}
+
+#product_printer_header div {
+	margin-bottom: 20px;
+}
+
+#product_printer_header_menu {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+#product_printer_header_menu img{
+	height: 64px;
+	width: 64px;
+	
+}
+
+#product_printer_header_menu p{
+	color: #ff4545;
+}
+
+#product_printer_header_menu #printer {
+	margin-right: 8%;
+	display: inline-block;
+}
+
+#product_printer_header_menu #printer_inks {
+	margin-right: 8%;
+	display: inline-block;
+}
+
+#product_printer_header_menu #printer_rental {
+	margin-right: 8%;
+	/*margin-right: 100px;*/
+	display: inline-block;
+}
+
+#product_printer_header_menu #printer_service {
+	margin-right: 8%;
+	display: inline-block;
+	/*margin-right: 100px;*/
+}
+
+#product_printer_header_menu #other_hardware {
+	margin-right: 8%;
+	/*margin-right: 100px;*/
+	display: inline-block;
+}
+
+#product_printer_body div{
+	display: inline-block;
+	width: 100%;
+	/*float: left;*/
+	margin:0; 
+	padding:0; 
+	/*box-sizing: border-box;*/
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+}
+
+#product_printer_body #left{
+	/*float: left;*/
+	width: 50%;
+	height: 768px;
+	display: inline-block;
+	vertical-align: top;
+	/*background: url('../images/printer-1.jpg');*/
+	/*background: , url('./images/printer-1.jpg'), contain, no-repeat;*/
+	background: linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,.75)), url('../images/printer-1.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; 
+	/*background-image: url('../images/printer-1.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;*/
+}
+
+#product_printer_body #left p.title{
+	color: white;
+	padding-top: 150px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	text-align: left;
+}
+
+#product_printer_body #left p.subtitle{
+	color: white;
+	padding-left: 100px;
+}
+
+#product_printer_body #left #product_printer_body_p{
+	max-width: 600px;
+}
+
+#product_printer_body #left #product_printer_body_buttons{
+	max-width: 100%;
+}
+
+#product_printer_body #right{
+	/*float: left*/;
+	vertical-align: bottom;
+	display: inline-block;
+	width: 49%;
+	height: 768px;
+	text-align: center;
+}
+
+#product_printer_body #right div{
+	float: left;
+	height: 384px;
+}
+
+#product_printer_body #right img{
+	max-width: 100%;
+	float: left;
+	background-repeat: no-repeat; 
+	/*background-size: auto 100%;*/
+	background-size: cover;
+	background-position: center center;
+	/*min-width: 100%;
+	min-height: 206px;
+	background-image: url('./images/printer-1.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; */
+}
+
+#product_printer_body #right p{
+	font-weight: bold;
+	word-wrap: break-word;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_west{
+	width: 50%;
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_west #block{
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_west span{
+	display: inline-block;
+
+}
+
+#product_printer_body #right #north_west p{
+	width: 70%;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_east #block{
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_east{
+	width: 50%;
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #north_east img{
+	max-width: 84%;
+	margin-right: 20%;
+}
+
+#product_printer_body #right #north_east span{
+	display: inline-block;
+}
+
+#product_printer_body #right #north_east p{
+	width: 70%;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_west #block{
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_west{
+	width: 50%;
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_west img{
+	max-width: 84%;
+	margin-right: 20%;
+}
+
+#product_printer_body #right #south_west span{
+	display: inline-block;
+}
+
+#product_printer_body #right #south_west p{
+	width: 70%;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_east #block{
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_east{
+	width: 50%;
+	display: inline-block;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_body #right #south_east span{
+	/*padding-left: 40px;*/
+	/*float: left;
+	margin-left: 5%;*/
+	display: inline-block;
+}
+
+#product_printer_body #right #south_east img{
+	max-width: 84%;
+	margin-right: 20%;
+}
+
+#product_printer_body #right #south_east p{
+	width: 70%;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	/*padding-left: 40px;*/
+}
+
+#product_printer_footer {
+	margin-bottom: 2em;
+}
+
+#product_printer_footer p {
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+#product_printer_footer #logos {
+	text-align: center;
+}
+
+#product_printer_footer .logo_div {
+	display: inline-block;
+}
+
+#product_printer_footer img{
+	max-height: 36px;
+	margin-left: 100px;
+	margin-bottom: 2em;
+}
+
+#product_printer_footer #logo1{
+	margin-left: 0;
+}
+
+#service_info {
+	width: 100%;
+	display: inline-block;
+}
+
+#service_info p{
+	color: white;
+	margin-left: 120px;
+}
+
+#service_info #left {
+	display: inline-block;
+	width: 50%;
+	background-color: #ff4545;
+	height: 600px;
+
+	margin-right: 0px;
+	/*position: relative;
+	top: -165px;*/
+}
+
+#service_info #left #service_info_p_buffer {
+	margin-top: 4em;
+}
+
+#service_info #left #leftmost {
+	float: left;
+	margin-left: 120px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+#service_info #left #middle {
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+#service_info #left #messenger {
+	height: 60px;
+	float: left;
+	padding: 0px;
+	width: 325px;
+	text-align: center;
+	text-decoration: none;
+	/*margin-right: 20px;*/
+	/*margin: 5px 2px;*/
+	position: relative;
+	top: 15px;
+	border: 0px;
+	border-radius: 50px;
+	color: #ff4545;
+	background: white;
+}
+
+
+#service_info #left #messenger:hover {
+    opacity: 0.7;
+}
+
+#service_info #left #messenger i{
+	float: left;
+	padding: 0px;
+	width: 0px;
+	margin-left: 20px;
+	margin-right: 75px;
+	position: relative;
+	top: 8px;
+}
+
+/* Reset opacity for this button, given entire div already has */
+#service_info #left #messenger i:hover{
+	opacity: 1;
+}
+
+#service_info #left #messenger p{
+	position: relative;
+	left: -15px;
+	top: 5px;
+	font-weight: bold;
+	margin-left: 0px;
+	color: #ff4545;
+	float: left;
+}
+
+#service_info #right {
+	display: inline-block;
+	width: 49%;
+    background: url('../images/printing_service.png');
+	/*background-size: contain;*/
+
+	background-repeat: no-repeat; 
+	/*background-size: auto 100%;*/
+	background-size: cover;
+	background-position: center center;
+
+
+	height: 600px;
+	vertical-align: bottom;
+	/*background-position: center; */
+	margin-left: 0px;
+	/*
+	display: inline-block;
+	width: 49%;
+	vertical-align: bottom;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+
+#rental_info #left {
+	width: 50%;
+	/*float: left;*/
+	display: inline-block;
+
+}
+
+#rental_info #left img{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+
+}
+
+#rental_info #right {
+	vertical-align: top;
+	margin-left: 100px;
+	width: 40%;
+	display: inline-block;
+	/*float: left;*/
+	height: 700px;
+}
+
+#rental_info #right #title_div{
+	margin-top: 150px;
+	margin-bottom: 75px;
+}
+
+
+#rental_info #right p.title {
+	color: #750000;
+	line-height: 50px;
+}
+
+#rental_info #right #subtitle_div{
+	margin-bottom: 50px;
+	display: inline;
+}
+
+#rental_info #right p.subtitle {
+	line-height: 24px;
+}
+
+#rental_info #right button {
+	margin-left: 0px;
+	margin-right: 15px;
+}
+
+#customer_reviews{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+#customer_reviews p {
+	line-height: 32px;
+	color: black;
+}
+
+#customer_reviews p.title {
+	font-weight: bold;
+}
+
+#customer_reviews p.subtitle {
+	position: relative;
+	left: -20px;
+}
+
+.moving_review {
+	display: none;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.active_div {
+	display: block;
+}
+
+.dot {
+	height: 25px;
+	width: 25px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.active, .dot:hover {
+	background-color: #ff4545;
+}
+
+#inquiry_form {
+	background: linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,.75)), url('../images/inquiry.jpg');
+	width: 100%;
+	height: 1000px;
+	/*background-size: contain;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*height: 600px;*/
+	vertical-align: bottom;
+	background-position: center center;
+
+	display: inline-block;
+	text-align: center;
+	margin-top: 100px;
+	background-attachment: fixed;
+}
+
+#inquiry_form p{
+	color: white;
+	text-align: center;
+}
+
+#inquiry_form p.title{
+	padding-top: 100px;
+}
+
+#inquiry_form p.subtitle{
+	font-weight: lighter;
+}
+
+#inquiry_form ::placeholder {
+	color: white;
+	padding-left: 15px;
+	font-size: 18px;
+	/*onfocus="this.placeholder = ''"
+	onblur="this.placeholder = 'enter your text'"*/
+}
+
+#inquiry_form input, textarea {
+	font-size: 18px;
+	font-family: Roboto, sans-serif;
+	outline: none;
+	color: white;
+	background: transparent;
+	border: 1px solid;
+	/*background-color: rgba(0, 0, 0, 0)*/
+	/*onfocus="this.placeholder = ''"
+	onblur="this.placeholder = 'enter your text'"*/
+}
+
+#inquiry_form #name_input {
+	/*margin-top: 50px;
+	margin-left: 22%;
+	display: inline-block;
+	width: 25%;*/
+
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	/*display: inline-block;*/
+	width: 30%;
+
+	/*border: 2px solid #ffffff;*/
+}
+
+#inquiry_form #name_input input {
+	width: 100%;
+	height: 36px;
+	padding: 10px;
+}
+
+#inquiry_form #purpose_input {
+/*
+	margin-top: 50px;
+	margin-left: 3%;
+	display: inline-block;
+	width: 25%;*/
+
+	margin-top: 50px;
+	margin-left: 3%;
+	margin-right: auto;
+	display: inline-block;
+	width: 30%;
+
+}
+
+#inquiry_form #purpose_input input {
+	width: 100%;
+	height: 36px;
+	padding: 10px;
+}
+
+#inquiry_form #email_input {
+	margin-top: 10px;
+	display: inline-block;
+	width: 63.5%;
+}
+
+#inquiry_form #email_input input{
+	width: 100%;
+	height: 36px;
+	padding: 10px;
+}
+
+#inquiry_form #message_input {
+	display: inline-block;
+	width: 63.5%;
+	/*border: 2px solid #ffffff;*/
+}
+
+#inquiry_form #message_input textarea{
+	margin-top: 20px;
+	width: 100%;
+	height: 36px;
+	padding: 10px;
+	padding-top: 25px;
+	padding-bottom: 180px;
+	border: 1px solid #ffffff;
+}
+
+#inquiry_form #button_inquiry button{
+	width: 20%;
+	/*border: 2px solid #ffffff;*/
+}
+
+#footer {
+	width: 100%;
+	display: inline-block;
+	padding-top: 50px;
+}
+
+#footer .fab, #footer .fa{
+	border: 1px solid #ff4545;
+}
+
+#footer #left_footer {
+	display: inline-block;
+}
+
+#footer #logo{
+	margin-left: 70px;
+	display:inline-block;
+	width: 48px;
+}
+
+#footer p {
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+	top: -4px;
+}
+
+#footer #right_footer {
+	float: right;
+	text-align: right;
+	position: relative;
+	top: -15px;
+	margin-right: 100px;
+}
+
+@media only screen and (max-width: 1226px) {
+	#service_info #left {
+		width: 100%;
+	}
+
+	#service_info #right {
+		width: 100%;
+	}
+
+
+	#rental_info {
+		text-align: center;
+	}
+
+	#rental_info #left{
+		width: 50%;
+		margin: auto;
+		display: inline-block;
+	}
+
+	#rental_info #right #title_div {
+		line-height: 24px;
+	}
+
+	#rental_info #right {
+		vertical-align: top;
+		text-align: center;
+		margin-left: 0;
+		width: 100%;
+		display: inline-block;
+		/*float: left;*/
+		height: auto;
+	}
+
+	#rental_info #right #title_div{
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	#rental_info #right p.title {
+		color: #750000;
+		line-height: 36px;
+	}
+
+	#rental_info #right #subtitle_div{
+		margin-bottom: 50px;
+	}
+
+	#rental_info #right #subtitle_div span.subtitle_red {
+		font-size: 18px;
+	}
+
+	#rental_info #right p.subtitle {
+		line-height: 24px;
+	}
+
+	#rental_info #right button {
+		width: 250px;
+		position: relative;
+		left: -10px;
+	}
+
+	#customer_reviews {
+		margin-top: 50px;
+	}
+	#inquiry_form #name_input {
+		width: 60%;
+		display: block;
+	}
+
+	#inquiry_form #purpose_input {
+		width: 60%;
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#inquiry_form #email_input {
+		width: 60%;
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#inquiry_form #message_input {
+		width: 60%;
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#inquiry_form #button_inquiry button{
+		width: 30%;
+	/*border: 2px solid #ffffff;*/
+	}
+
+ }
+
+
+@media only screen and (max-width: 1024px) {
+	
+
+	p.title {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	p.subtitle {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 32px;
+	}
+
+	p.small_text {
+		line-height: 24px;
+	}
+
+	#brand {
+		margin-left: 8%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#brand_subtitle, #navigation {
+		display: none;
+	}
+
+	#navigation_mobile {
+		display: inline-block;
+		float: right;
+	}
+
+	#navigation_mobile input {
+		display: block;
+  		opacity: 0; /* hide this */
+
+	}
+
+	#navigation_mobile .fa{
+		color: #ff4545;
+		font-size: 24px;
+		padding: 36px;
+		padding-right: 24px;
+		width: 48px;
+	}
+
+	#navigation_mobile .side_nav {
+		height: 100%;
+		position: fixed;
+  		overflow-x:hidden;
+  		background-color:#111;
+  		opacity:0.9;
+		width: 0px;
+		/*animation-direction: reverse;*/
+  		transition:0.5s;
+	}
+
+	#navigation_mobile .side_nav a{
+		padding:20px 10px 10px 10px;
+		text-decoration:none;
+		font-family: Roboto, sans-serif;
+		font-size:18px;
+		color:#ccc;
+		display:block;
+		/*animation-direction: reverse;*/
+		transition:0.3s;
+	}
+
+	#navigation_mobile .side_nav .btn_close{
+		position:absolute;
+		top:-10px;
+		font-size:36px;
+		margin-left:70px;
+		padding-bottom: 20px;
+	}
+
+	#product_printer_header p {
+		word-wrap: break-word;
+	}
+
+	#product_printer_header_menu {
+		display: inline-block;
+	}
+	#product_printer_header_menu #printer {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+
+	#product_printer_header_menu #printer_inks {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+
+	#product_printer_header_menu #printer_rental {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+
+	#product_printer_header_menu #printer_service {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+/*
+	#product_printer_header_menu #other_hardware {
+		margin-left: 0px;
+		width: 46%;
+		text-align: center;
+	}
+*/
+	#product_printer_header_menu #other_hardware {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+
+	#product_printer_header_menu #temp_placeholder {
+		height: 64px;
+		/*margin-right: 100px;*/
+		display: inline-block;
+		margin: 0;
+		width: 46%;
+		text-align: center;
+	}
+
+	#product_printer_body #left{
+		width: 100%;
+	}
+
+	#product_printer_body #right{
+		width: 100%;
+	}
+
+	#product_printer_body #left #product_printer_body_p{
+		max-width: 70%;
+	}
+
+	#product_printer_body #left #product_printer_body_buttons button{
+		width: 16em;
+		font-size: 18px;
+		padding: 32px;
+		border-radius: 40px;
+		display: block;
+		margin-left: 5em;
+
+/*
+		margin-left: 10px;
+		margin-top: 2em;
+		border-radius: 30px;
+		border: 2px solid #ff4545;
+		background: #ff4545;
+		color: white;
+		font-weight: bold;
+		font-size: 16px;
+		padding: 1em;
+		width: 12em;*/
+	}
+	#product_printer_footer {
+		margin-top: 100px;
+	}
+
+	#product_printer_footer .logo_div{
+		width: 49%;
+	}
+	#product_printer_footer img{
+		width: 49%;
+		max-height: 40px;
+		display: inline-block;
+		text-align: center;
+		margin-left: 0;
+		margin-bottom: 3em;
+	}
+
+
+	#inquiry_form #button_inquiry button{
+		width: 50%;
+		/*border: 2px solid #ffffff;*/
+	}
+
+/*
+	div {
+	  background: url(./Resources/Images/banner.jpeg) no-repeat scroll center top transparent;
+	  height: 100px;
+	}
+*/
+}
+
+@media only screen and (max-width: 730px) {
+
+	#service_info #left {
+		width: 100%;
+	}
+
+	#service_info #right {
+		width: 100%;
+	}
+
+	#service_info #left p {
+		margin-left: 60px;
+	}
+
+
+	#service_info #left #leftmost {
+
+		margin-left: 60px;
+	}
+
+	#service_info #left #messenger {
+		
+		height: 60px;
+		float: left;
+		padding: 3px;
+		width: 60px;
+		text-align: center;
+		text-decoration: none;
+		/*margin-right: 20px;*/
+		/*margin: 5px 2px;*/
+		position: relative;
+		top: 15px;
+		border: 0px;
+		border-radius: 50px;
+		color: #ff4545;
+		background: white;
+	}
+
+	#service_info #left #messenger i{
+		position: relative;
+		left: -10px;		
+	}
+
+	#service_info #left #messenger p{
+		display: none;
+	}
+
+
+}
+@media only screen and (max-width: 515px) {
+
+	p.title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	p.subtitle {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 32px;
+	}
+
+	p.small_text {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	#showcase {
+		background-position: 10px 200px;
+	}
+
+	#showcase #button_1 button {
+		margin-left: 40px;
+	}
+
+	#showcase p {
+		margin-left: 40px;
+	}
+
+	#product_printer_body #left p.title{
+		padding-left: 50px;
+	}
+
+	#product_printer_body #left p.subtitle{
+		padding-left: 50px;
+	}
+
+	#product_printer_body #left #product_printer_body_buttons button{
+		width: 12em;
+		font-size: 14px;
+		padding: 16px;
+		border-radius: 40px;
+		display: block;
+		margin-left: 5em;
+		margin-left: 30px;
+	}
+
+	#product_printer_body #right {
+		margin-bottom: 0;
+	}
+	#product_printer_footer {
+		margin-top: 0px;
+	}
+
+	#product_printer_footer #logos {
+		text-align: center;
+		display: block;
+	}
+
+	#product_printer_footer .logo_div {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	#product_printer_footer img{
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	#inquiry_form ::placeholder {
+		font-size: 18px;
+		/*onfocus="this.placeholder = ''"
+		onblur="this.placeholder = 'enter your text'"*/
+	}
+
+	#inquiry_form input, textarea {
+		font-size: 18px;
+	}
+
+	#inquiry_form #name_input input {
+		width: 100%;
+		height: 24px;
+		padding: 7px;
+	}
+
+	#inquiry_form #purpose_input input {
+		width: 100%;
+		height: 24px;
+		padding: 7px;
+	}
+
+	#inquiry_form #email_input input{
+		width: 100%;
+		height: 36px;
+		padding: 7px;
+	}
+
+	#inquiry_form #message_input textarea{
+		margin-top: 20px;
+		width: 100%;
+		height: 36px;
+		padding: 7px;
+		padding-top: 25px;
+		padding-bottom: 180px;
+	}
+
+	#inquiry_form #button_inquiry button{
+		width: 50%;
+		/*border: 2px solid #ffffff;*/
+	}
+
+	#rental_info p {
+		text-align: left;
+	}
+
+	#rental_info #right #subtitle_div p.subtitle{
+		margin-left: 20px;
+	}
+
+	#rental_info #right #button_div {
+		margin-left: 30px;
+	}
+
+	#rental_info #right #button_div button{
+		margin-left: 0;
+		float: left;
+		width: 90%;
+	}
+}
+

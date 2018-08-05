@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="60px" viewBox="0 0 68 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icn Response</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Exportable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Printer-Rental" transform="translate(-321.000000, -1733.000000)">
+            <g id="Icn-Response" transform="translate(315.000000, 1719.000000)">
+                <rect id="Rectangle-14-Copy-5" x="0" y="0" width="82" height="82"></rect>
+                <path d="M63.4095129,64 L64.6664735,73.7165902 L53.5056502,64 L22,64 C17.581722,64 14,60.418278 14,56 L14,30 C14,25.581722 17.581722,22 22,22 L66,22 C70.418278,22 74,25.581722 74,30 L74,56 C74,60.418278 70.418278,64 66,64 L63.4095129,64 Z" id="Combined-Shape-Copy" fill="#D64E4E"></path>
+                <path d="M57.4095129,58 L58.6664735,67.7165902 L47.5056502,58 L16,58 C11.581722,58 8,54.418278 8,50 L8,24 C8,19.581722 11.581722,16 16,16 L60,16 C64.418278,16 68,19.581722 68,24 L68,50 C68,54.418278 64.418278,58 60,58 L57.4095129,58 Z" id="Combined-Shape" stroke="#000000" stroke-width="4" fill="#FFFFFF" stroke-linecap="round"></path>
+                <circle id="Oval-9" fill="#D64E4E" cx="23" cy="39" r="3"></circle>
+                <circle id="Oval-9-Copy" fill="#D64E4E" cx="37" cy="39" r="3"></circle>
+                <circle id="Oval-9-Copy-2" fill="#D64E4E" cx="51" cy="39" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

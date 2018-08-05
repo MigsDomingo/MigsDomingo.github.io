@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accessories and Supplies Depot Inc.</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <!-- Can potential slow, only use if necessary 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_products.css">
+  
+  <!-- imbedded css version
+  <style type="text/css">
+   
+  </style>
+  -->
+  </head>
+  <body>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+  <!-- Start -->
+  <div id="global">
+      <div id="header_div">
+          <header>
+            <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                  document.getElementsByTagName("header")[0].style.top = "0";
+                  document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
+                  document.getElementsByTagName("header")[0].style.transition = "0.3s";
+                  //document.getElementById("header_div").style.top = "100px;";
+                } else {
+                  document.getElementsByTagName("header")[0].style.top = "-120px";
+                  //document.getElementById("header_div").style.top = "-120px";
+                }
+                prevScrollpos = currentScrollPos;
+              }
+          </script>
+
+              <div id="brand">
+                <a href="index.html">
+                  <img id="logo" src="./images/asdi-logo.svg">
+                </a>
+                <h1 id="brand_subtitle">ACCESSORIES AND SUPPLIES DEPOT INC.</h1>
+              </div>
+              <div id="navigation">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li class="current"><a href="products.html">PRODUCTS</a></li>
+                          <li><a href="printer_rental.html">PRINTER RENTAL</a></li>
+                          <li><a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">PRINTING SERVICE</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div id="navigation_mobile">
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                      <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
+                      <i class="fa fa-bars" id="menu_section"></i>
+
+                      <div id="side_menu" class="side_nav">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="printer_rental.html">Printer Rental</a>
+                        <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+
+                      <!-- <script type="text/javascript"> -->
+                      <script>
+                          function toggleSlideMenu() {
+                              console.log(document.getElementById('side_menu').style.width);
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  console.log(document.getElementById('side_menu').style.width);
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+          </header>
+      </div>
+      <body>
+          <div id="showcase_products">
+              <p class="title">Our Products</p>
+              <p class="small_text">Printers. Inks. Hardwares. Have a look at our product list!</p>
+          </div> 
+              
+          <div id="showcase_products_2">
+              <p id="showcase_products_2_header" class="title">We sell quality printers, inks, laptops and USB devices.</p>
+              <div id="product_1">
+                  <img src="./images/products_printer.png">
+                  <p class="title">Printers</p>
+              </div>
+              <div id="product_2">
+                  <img src="./images/products_inks.png">
+                  <p class="title">Printers Inks</p>
+              </div>
+              <div id="product_3">
+                  <img src="./images/products_laptop.png">
+                  <p class="title">Laptop</p>
+              </div>
+              <div id="product_4">
+                  <img src="./images/products_usb.png">
+                  <p class="title">USB Devices</p>
+              </div>
+          </div>
+
+          <div id="product_printer_footer">
+                  <p class="title">Our Trusted Partners</p>
+                  <div id="logos">
+                      <div class="logo_div">
+                          <img id="logo1" src="./images/canon_logo.svg">
+                      </div>
+                      <div class="logo_div">
+                          <img src="./images/epson_logo.svg">
+                      </div>
+                      <div class="logo_div">
+                          <img src="./images/hp_logo.svg">
+                      </div>
+                      <div class="logo_div">                
+                          <img src="./images/brother_logo.svg">
+                      </div>
+                  </div>
+                  <!-- <img src="./images/seagate_logo.svg"> -->
+              </div>
+
+          <div id="printer_rental_showcase">
+              <div id="left"></div>
+              <div id="right">
+                  <div id="temp1"></div>
+                  <div id="pwrapper">
+                      <p class="title">Only need a printer for a short time? Try our Printer Rental Service!</p>
+                      <button class="red_white_border" id="printer_rental_button_1">More Details</button>
+                      <button class="white" id="inquire_button">Inquire</button>
+                          
+                      <script>
+                        $("#printer_rental_button_1").click(function() {
+                              window.location.href = "printer_rental.html";
+                        });
+                        $("#inquire_button").click(function() {
+                            $('html,body').animate({
+                                scrollTop: $("#inquiry_form").offset().top},
+                                'slow');
+                        });
+                      </script>
+                  </div>
+                  <div id="temp2"></div>
+              </div>
+          </div>
+
+          <div id="inquiry_form">
+              <p class="title">Inquire now!</p>
+              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+              <div id="name_input">
+                  <input  type="text" name="Name" placeholder="Name">
+              </div>
+              <div id="purpose_input">
+                  <input  type="text" name="Purpose" placeholder="Select Purpose">
+                  <!--<span class="dropbtn">
+                      <p>Purpose</p>
+                      <img src="./images/black_downpointing_triangle.svg">
+                      <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                      </div>
+                  </span> -->
+                  <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
+              </div>
+              <div id="email_input">
+                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div id="message_input">
+                  <textarea id="message_input" placeholder="Message"></textarea>
+              </div>
+              <div id="button_inquiry">
+                <button class="red">Send Now</button>
+              </div>
+          </div>
+      </body>
+
+      
+  </div>
+  <!-- End -->
+
+  <!-- Load javascript only after DOM elements have finished loaded -->
+  <!-- 
+  <script type="text/javascript">
+   function autorun()
+   {
+    
+   }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+  </script>
+  -->
+  </body>
+  <footer id="footer">
+      <div id="left_footer">
+      <img id="logo" src="./images/asdi-logo.svg">
+      <p>Copyright 2018 All Rights Reserved.</p>
+      <!-- facebook and google maps:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+      -->
+      </div>
+      <div id="right_footer">
+          <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>
+          <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="google_maps_icon_footer"></a>
+      </div>
+  </footer>
+</html>

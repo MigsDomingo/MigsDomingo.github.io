@@ -1,0 +1,257 @@
+/*
+
+Products OVERRIDES
+
+*/
+
+#showcase_products {
+	display: inline-block;
+	min-width: 100%;
+	min-height: 400px;
+	background-image: url('../images/Hero_Products.png');
+	background-size: cover;
+	/*background: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0.2)), url('../images/home_page_brother.png') ; */
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+
+}
+
+#showcase_products p{
+	text-align: center;
+}
+
+#showcase_products p.title {
+	color: #750000;
+	font-weight: 300;
+	padding-top: 80px;
+}
+
+#showcase_products_2 {
+	display: block;
+}
+
+#showcase_products_2 p.title {
+	text-align: center;
+	color: black;
+	font-weight: 600;
+}
+
+#showcase_products_2 #showcase_products_2_header {
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	padding-top: 50px;
+}
+
+#showcase_products_2 #product_1 {
+	margin-left: 3%;
+	margin-right: 2%;
+	display: inline-block;
+	max-width: 25%;
+}
+
+#showcase_products_2 #product_1 img {
+	width: 100%;
+	height: auto;
+}
+
+
+#showcase_products_2 #product_2 {
+	margin-right: 2%;
+	display: inline-block;
+	width: 20%;
+	
+}
+
+#showcase_products_2 #product_2 img {
+	width: 100%;
+	height: auto;
+}
+
+#showcase_products_2 #product_3 {
+	margin-right: 2%;
+	display: inline-block;
+	width: 20%;	
+}
+
+#showcase_products_2 #product_3 img {
+	width: 100%;
+	height: auto;
+}
+
+#showcase_products_2 #product_4 {
+	margin-right: 5%;
+	display: inline-block;
+	width: 20%;
+}
+
+#showcase_products_2 #product_4 img {
+	width: 100%;
+	height: auto;
+}
+
+#product_printer_footer {
+	margin-top: 80px;
+	text-align: center;
+	display: block;
+	margin-bottom: 50px;
+}
+
+#product_printer_footer p.title{
+	font-weight: 350;
+	color: black;
+	margin-bottom: 30px;
+}
+
+#printer_rental_showcase {
+	display: block;
+	font-size: 0; /* removes gap between divs if declared in parent div */
+}
+
+#printer_rental_showcase #left{
+	display: inline-block;
+	width: 42%;
+    background: url('../images/RentPrinter-Feature.png');
+	/*background-size: contain;*/
+	background-repeat: no-repeat; 
+	/*background-size: auto 100%;*/
+	background-size: cover;
+	background-position: center center;
+	height: 400px;
+	/*background-position: center; */
+	vertical-align: bottom;
+}
+
+#printer_rental_showcase #right{
+	width: 58%;
+	display: inline-block;
+	background-color: #d64e4e;
+	height: 400px;
+}
+
+#printer_rental_showcase #right #temp1 {
+	display: inline-block;
+	width: 15%;
+	height: auto;
+}
+
+#printer_rental_showcase #right #pwrapper {
+	padding-top: 50px;
+	display: inline-block;
+	width: 70%;
+}
+
+#printer_rental_showcase #right #pwrapper p{
+	font-weight: 100;
+}
+
+#printer_rental_showcase #right #pwrapper p.title{
+	color: white;
+	margin-bottom: 20px;
+}
+
+#printer_rental_showcase #right #temp2 {
+	display: inline-block;
+	width: 15%;
+}
+
+#printer_rental_showcase button{
+	margin-top: 0;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#inquiry_form {
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 1226px) {
+
+	#showcase_products_2 {
+		display: inline-block;
+		width: 100%;
+	}
+	#showcase_products_2 #product_1 {
+		max-width: 46%;
+		width: 46%;
+		margin-left: 4%;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	#showcase_products_2 #product_2 {
+		max-width: 46%;
+		width: 46%;
+		text-align: center;
+	}
+
+	#showcase_products_2 #product_3 {
+		max-width: 46%;
+		width: 46%;
+		margin-left: 4%;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	#showcase_products_2 #product_4 {
+		margin: 0px;
+		width: 46%;
+		text-align: center;
+	}
+
+	#printer_rental_showcase #left{
+		display: block;
+		width: 100%;
+	}
+	#printer_rental_showcase #right{
+		display: block;
+		width: 100%;
+	}
+
+
+}
+@media only screen and (max-width: 515px) {
+
+	#showcase_products_2 {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#showcase_products_2 p.title {
+		padding-top: 0;
+	}
+	#showcase_products_2 #product_1 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#showcase_products_2 #product_2 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#showcase_products_2 #product_3 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#showcase_products_2 #product_4 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+	
+}

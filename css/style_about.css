@@ -1,0 +1,123 @@
+/*
+
+ABOUT OVERRIDES
+
+*/
+
+p.title {
+	color: #750000;
+	text-align: justify;
+}
+
+p.small_text {
+	text-align: justify;
+}
+
+#about_showcase {
+	max-height: 480px;
+	width: 100%;
+	background-size: cover;
+	/*background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('../images/Hero_Location.png');*/
+	background-image: url('../images/Hero_Location.png');
+	/*background-repeat: no-repeat;*/
+}
+
+#about_p1 p{
+	padding-top: 100px;
+	text-align: center;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+#about_p2 p{
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#about_history {
+	display: inline-block;
+}
+
+#about_history #history_p1 p{
+	text-align: center;
+}
+
+#history_p1 {
+}
+
+#history_p2 {
+	line-height: 30px;
+	text-align: justify;
+	margin: auto;
+	width: 60%;
+}
+
+#history_p2 p{
+	line-height: 30px;
+}
+
+#accreditation {
+	padding-top: 100px;
+	padding-bottom: 400px;
+	margin-bottom: 0px;
+	/*background-size: cover;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	/*background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('../images/inquiry.jpg');*/
+	background-image: url('../images/about_trophies.png');
+	vertical-align: bottom;
+	/*background-image: url('../images/about_trophies.png');*/
+}
+
+#accreditation #accreditation_p1 p{
+	text-align: center;
+}
+
+#accreditation #accreditation_p2{
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+
+#accreditation #accreditation_p2 p{
+	text-align: justify;
+}
+
+
+#inquiry_form {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+@media only screen and (max-width: 515px) {
+	
+	#about_history #history_p1 p {
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	#about_history #history_p2 {
+		margin: 0;
+		margin-left: 20px;
+		width: 80%;
+	}
+
+	#about_history #history_p2 p {
+		text-align: left;
+	}
+
+	#accreditation #accreditation_p1 p {
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	#accreditation #accreditation_p2 {
+		margin: 0;
+		margin-left: 20px;
+		width: 80%;
+	}
+	#accreditation #accreditation_p2 p {
+		text-align: left;
+	}
+}

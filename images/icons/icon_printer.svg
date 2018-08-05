@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="41px" viewBox="0 0 39 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon Printer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Exportable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-1440" transform="translate(-329.000000, -910.000000)">
+            <g id="Icon-Printer" transform="translate(328.000000, 910.000000)">
+                <rect id="Rectangle-14-Copy" x="0" y="0" width="41" height="41"></rect>
+                <rect id="Rectangle-13" stroke="#000000" stroke-width="2" fill="#FFFFFF" x="9" y="1" width="23" height="17"></rect>
+                <rect id="Rectangle-12" stroke="#000000" stroke-width="2" fill="#D64E4E" x="2" y="14" width="37" height="19" rx="2"></rect>
+                <rect id="Rectangle-13-Copy" stroke="#000000" stroke-width="2" fill="#FFFFFF" x="10" y="23" width="22" height="17"></rect>
+                <path d="M13.5714286,27.5 L28.4285714,27.5" id="Line-3" stroke="#000000" stroke-linecap="square"></path>
+                <path d="M13.5714286,30.5 L28.4285714,30.5" id="Line-3-Copy" stroke="#000000" stroke-linecap="square"></path>
+                <path d="M13.5714286,33.5 L28.4285714,33.5" id="Line-3-Copy-2" stroke="#000000" stroke-linecap="square"></path>
+                <path d="M13.5714286,36.5 L28.4285714,36.5" id="Line-3-Copy-3" stroke="#000000" stroke-linecap="square"></path>
+                <circle id="Oval-4" stroke="#000000" cx="35.5" cy="20.5" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

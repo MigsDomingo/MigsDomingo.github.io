@@ -1,0 +1,396 @@
+/*
+
+PRINTER RENTAL OVERRIDES
+
+*/
+* {-webkit-font-smoothing: antialiased;}
+
+p.title {
+	color: #750000;
+	text-align: center;
+}
+
+p.title_num {
+	font-size: 48px;
+	font-weight: lighter;
+	color: white;
+	text-align: left;
+	line-height: 0;
+}
+
+p.small_text {
+}
+
+#showcase_printer_rental {
+	max-height: 480px;
+	width: 100%;
+	background-size: cover;
+	/*background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('../images/hero_printer_rental.png');*/
+	background-image: url('../images/hero_printer_rental.png');
+	/*background-repeat: no-repeat;*/
+}
+
+#showcase_new {
+
+}
+
+#showcase_pr_p1 {
+	padding-top: 40px;
+}
+
+#showcase_pr_p1 p{
+	font-weight: normal;
+}
+
+#showcase_pr_p2 {
+	padding-bottom: 100px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+#rental_info #left {
+	width: 60%;
+	vertical-align: bottom;
+}
+
+#rental_info #left #printer_wrapper_1{
+	margin-left: 10px;
+	display: inline-block;
+	height: 500px;
+	width: 100%;
+	background-size: contain;
+	vertical-align: bottom;
+	background-image: url('../images/printer_pair.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: top;
+}
+
+#rental_info #left #printer_wrapper_2{
+	display: inline-block;
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-image: url('../printer_images/Rent-Brother2.png');
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+/*
+#rental_info img#printer1 {
+	margin-top: 60px;
+	width: 49%;
+	height: auto;
+}
+
+#rental_info img#printer2 {
+	margin-top: 60px;
+	width: 49%;
+	height: auto;
+}
+*/
+#rental_info #right {
+	margin: 0;
+	width: 39%;
+	height: auto;
+}
+
+#rental_info #right #title_div {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+#rental_info #right p{
+	display: inline-block;
+	text-align: left;
+	width: 75%;
+	margin-left: 20px;
+}
+
+#rental_info #right button {
+	margin-left: 20px;
+}
+
+
+
+#how_it_works {
+	margin-top: 20px;
+	width: 100%;
+	background-color: #d64e4e;
+	display: inline-block;
+	height: auto;
+}
+
+
+#how_it_works p.title
+{
+	font-size: 28px;
+	color: white;
+	font-weight: normal;
+	text-align: left;
+}
+
+#how_it_works p.small_text{
+	color: white;
+}
+
+
+#how_it_works #workflow_title{
+	padding-top: 40px;
+}
+
+#how_it_works #workflow_title p{
+	text-align: center;
+}
+
+#how_it_works #step_0{
+	width: 10%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#how_it_works #step_1{
+	width: 16.67%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#how_it_works #step_2{
+	width: 16.67%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#how_it_works #step_3{
+	width: 16.67%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#how_it_works #step_4{
+	width: 16.67%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#how_it_works #step_5{
+	width: 8%;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 350px;
+}
+
+#how_it_works #bottom {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#how_it_works button {
+	margin: 0;
+	margin-bottom: 40px;
+	width: 18em;
+}
+
+#why_choose_asdi {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 40px;
+	background-color: #f7f7f7;
+}
+
+#why_choose_asdi #icon_area {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+#why_choose_asdi #icon_area #temp1{
+	/*display: inline-block;
+	width: 10%;
+	height: auto;*/
+}
+
+#why_choose_asdi #icon_area #icon1{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #icon_area #icon2{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #icon_area #icon3{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #temp2{
+	/*width: 10%;
+	height: auto;*/
+}
+
+#icon_area {
+	margin-bottom: 40px;
+}
+
+.dot_white {
+	height: 150px;
+	width: 150px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top; 
+    text-align: center;
+    text-decoration: none;
+}
+
+#icon1 img{
+	position: relative;
+	bottom: -45px;
+}
+
+#icon2 img{
+	position: relative;
+	bottom: -45px;
+}
+
+#icon3 img{
+	position: relative;
+	bottom: -45px;
+}
+
+@media only screen and (max-width: 1226px) {
+
+	#rental_info #right  {
+		text-align: left;
+	}
+
+	#rental_info #right #title_div {
+		margin-left: 0;
+	}
+
+	#rental_info #right #button_wrapper button#inquire_button1{
+		margin-left: 20px;
+		left: 0;
+		position: static;
+		float: left;
+	}
+
+}
+@media only screen and (max-width: 1023px) {
+	#rental_info #left {
+		width: 100%;
+	}
+
+	#rental_info #right {
+		width: 100%;
+		height: auto;
+	}
+
+	#rental_info #right #title_div {
+		margin-top: 10px;
+	}
+
+	#rental_info #left #printer_wrapper_1 {
+		height: 250px;
+	}
+
+	#how_it_works {
+		text-align: left;
+	}
+
+	#how_it_works #workflow_title {
+		margin-left: 20%;
+		display: block;
+		width: 60%;
+
+	}
+
+	#how_it_works #top p.small_text{
+		margin-bottom: 100px;
+	}
+
+	#how_it_works #step_1 {
+		margin-left: 20%;
+		display: block;
+		width: 60%;
+
+	}
+	#how_it_works #step_2 {
+		margin-left: 20%;
+		display: block;
+		width: 60%;
+
+	}
+	#how_it_works #step_3 {
+		margin-left: 20%;
+		display: block;
+		width: 60%;
+
+	}
+	#how_it_works #step_4 {
+		margin-left: 20%;
+		display: block;
+		width: 60%;
+		margin-bottom: 0px;
+	}
+
+	#how_it_works #step_5 {
+		padding-bottom: 0;
+	}
+
+	#how_it_works button {
+		float: left;
+		margin-left: 20%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#why_choose_asdi #icon_area	#icon1{
+		width: 100%;
+	}
+
+	#why_choose_asdi #icon_area	#icon2{
+		width: 100%;
+	}
+
+	#why_choose_asdi #icon_area	#icon3{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 515px) {
+	#how_it_works #step_1 {
+		margin-left: 8%;
+	}
+	#how_it_works #step_2 {
+		margin-left: 8%;
+	}
+	#how_it_works #step_3 {
+		margin-left: 8%;
+	}
+	#how_it_works #step_4 {
+		margin-left: 8%;
+	}
+	#how_it_works #top #step_4 p.small_text {
+		margin-bottom: 0px;
+	}
+
+	#how_it_works button {
+		width: 15em;
+		margin-left: 5%;
+	}
+}

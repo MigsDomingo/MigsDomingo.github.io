@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accessories and Supplies Depot Inc.</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <!-- Can potential slow, only use if necessary 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_about.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  
+  <!-- imbedded css version
+  <style type="text/css">
+   
+  </style>
+  -->
+  </head>
+  <body>
+
+  <!-- Start -->
+  <div id="global">
+      <div id="header_div">
+          <header>
+            <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                  document.getElementsByTagName("header")[0].style.top = "0";
+                  document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
+                  document.getElementsByTagName("header")[0].style.transition = "0.3s";
+                  //document.getElementById("header_div").style.top = "100px;";
+                } else {
+                  document.getElementsByTagName("header")[0].style.top = "-120px";
+                  //document.getElementById("header_div").style.top = "-120px";
+                }
+                prevScrollpos = currentScrollPos;
+              }
+          </script>
+              <div id="brand">
+                <a href="index.html">
+                  <img id="logo" src="./images/asdi-logo.svg">
+                </a>
+                <h1 id="brand_subtitle">ACCESSORIES AND SUPPLIES DEPOT INC.</h1>
+              </div>
+              <div id="navigation">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                          <li><a href="printer_rental.html">PRINTER RENTAL</a></li>
+                          <li><a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">PRINTING SERVICE</a></li>
+                          <li class="current"><a href="about.html">ABOUT</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div id="navigation_mobile">
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                      <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
+                      <i class="fa fa-bars" id="menu_section"></i>
+
+                      <div id="side_menu" class="side_nav">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="printer_rental.html">Printer Rental</a>
+                        <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+
+                      <!-- <script type="text/javascript"> -->
+                      <script>
+                          function toggleSlideMenu() {
+                              console.log(document.getElementById('side_menu').style.width);
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  console.log(document.getElementById('side_menu').style.width);
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+          </header>
+      </div>
+      <body>
+
+          <div id="about_showcase">
+              <div id="about_p1">
+                  <p class="title">About Us</p>
+              </div>
+              <div id="about_p2">
+                  <p class="small_text">Learn more about us</p>
+              </div>
+          </div> 
+
+          <div id="about_history">
+              <div id="history_p1">
+                  <p class="title">Company History</p>
+              </div>
+              <div id="history_p2">
+                  <p class="small_text">
+                  Accessories and Supplies Depot, Inc. was incorporated March 1999. Our goal is to provide our clientele with the best product and excellent service at a cost-effective price. During our early years, the company also known to many as ASDI (as-dee) only sold computer accessories to various retail outfits in various malls in Metro Manila.
+                  <br>
+                  <br>
+                  A few years after, our company expanded our product portfolio by selling computer consumables such as ink cartridges, toner cartridges and consumer and commercial printers.
+                  <br>
+                  <br>
+                  While we have managed to independently expand our operation in Metro Manila and also outside, specifically in the northern and southern Luzon are, and in the key cities of Visayas and Mindanao, HP Inc. took notice of our strength when it comes to the availability of various supplies, nationwide distribution and consumer reach with these IT products. This led for doors to open for the company. Our relationship and ties with HP Inc., further strengthened by our appointment as one of their authorized sub-distributor. Epson on the other hand, elevated us as their Platinum Partner from Gold, which is attributed to our excellent track record and consistent year-on-year growth and target achievement. We are also one of the few selected in the Canon Elite Circle of Canon Marketing Philippines.
+</p>
+              </div>
+          </div>
+
+          <div id="accreditation">
+              <div id="accreditation_p1">
+                  <p class="title">Accreditations</p>
+              </div>
+              <div id="accreditation_p2">
+                  <p class="small_text">
+                      Platunum Partner Epson Philippines Corporation
+                      <br>
+                      <br>
+                      Appointed by HP Philippines Inc. as an accredited Sub-Distributor for printers and supplies
+                      <br>
+                      <br>
+                      Canon Elite Circle
+                      <br>
+                      <br>
+                      Authorized Reseller Brother Printers and Supplies
+                  </p>
+              </div>
+          </div>
+          
+          <div id="inquiry_form">
+              <p class="title">Inquire now!</p>
+              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+              <div id="name_input">
+                  <input  type="text" name="Name" placeholder="Name">
+              </div>
+              <div id="purpose_input">
+                  <input  type="text" name="Purpose" placeholder="Select Purpose">
+                  <!--<span class="dropbtn">
+                      <p>Purpose</p>
+                      <img src="./images/black_downpointing_triangle.svg">
+                      <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                      </div>
+                  </span> -->
+                  <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
+              </div>
+              <div id="email_input">
+                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div id="message_input">
+                  <textarea id="message_input" placeholder="Message"></textarea>
+              </div>
+              <div id="button_inquiry">
+                <button class="red">Send Now</button>
+              </div>
+          </div>
+      </body>
+
+      
+  </div>
+  <!-- End -->
+
+  <!-- Load javascript only after DOM elements have finished loaded -->
+  <!-- 
+  <script type="text/javascript">
+   function autorun()
+   {
+    
+   }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+  </script>
+  -->
+  </body>
+  <footer id="footer">
+      <div id="left_footer">
+      <img id="logo" src="./images/asdi-logo.svg">
+      <p>Copyright 2018 All Rights Reserved.</p>
+      <!-- facebook and google maps:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+      -->
+      </div>
+      <div id="right_footer">
+          <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>
+          <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="google_maps_icon_footer"></a>
+      </div>
+  </footer>
+</html>

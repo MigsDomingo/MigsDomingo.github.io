@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accessories and Supplies Depot Inc.</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_printer_rental.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+  
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <div id="global">
+      <div id="header_div">
+          <header>
+            <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                  document.getElementsByTagName("header")[0].style.top = "0";
+                  document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
+                  document.getElementsByTagName("header")[0].style.transition = "0.3s";
+                  //document.getElementById("header_div").style.top = "100px;";
+                } else {
+                  document.getElementsByTagName("header")[0].style.top = "-120px";
+                  //document.getElementById("header_div").style.top = "-120px";
+                }
+                prevScrollpos = currentScrollPos;
+              }
+          </script>
+              <div id="brand">
+                <a href="index.html">
+                  <img id="logo" src="./images/asdi-logo.svg">
+                </a>
+                <h1 id="brand_subtitle">ACCESSORIES AND SUPPLIES DEPOT INC.</h1>
+              </div>
+              <div id="navigation">
+                  <nav>
+                      <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                          <li class="current"><a href="printer_rental.html">PRINTER RENTAL</a></li>
+                          <li><a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">PRINTING SERVICE</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div id="navigation_mobile">
+                  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                      <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
+                      <i class="fa fa-bars" id="menu_section"></i>
+
+                      <div id="side_menu" class="side_nav">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="printer_rental.html">Printer Rental</a>
+                        <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+
+                      <!-- <script type="text/javascript"> -->
+                      <script>
+                          function toggleSlideMenu() {
+                              console.log(document.getElementById('side_menu').style.width);
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  console.log(document.getElementById('side_menu').style.width);
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+          </header>
+      </div>
+      <body>
+
+          <div id="showcase_printer_rental">
+              <!--
+              <div id="showcase_new">
+                  <p class="title">NEW</p>
+              </div>
+            -->
+              <div id="showcase_pr_p1">
+                  <p class="title">Printer Rental</p>
+              </div>
+              <div id="showcase_pr_p2">
+                  <p class="small_text">
+                      Our newest hassle-free printer rental for your business!
+                  </p>
+              </div>
+          </div> 
+
+          <div id="rental_info">
+              <div id="left">
+                  <!-- <img id="printer1" src="./printer_images/dpc-j105.png">
+                  <img id="printer2" src="./printer_images/MFCJ3530.jpg"> -->
+                  <div id="printer_wrapper_1"></div>
+                  <!--<div id="printer_wrapper_2"></div>-->
+                  <!--<img id="printer1" src="./printer_images/Rent-Brother1.png">
+                  <img id="printer2" src="./printer_images/Rent-Brother2.png">-->
+              </div>
+              <div id="right">
+                  <div id="title_div">
+                    <p class="title">Need a printer for only a short period of time?</p>
+                  </div>
+                  <div id="subtitle_div">
+                    <p class="subtitle">Try our newest printer rental service!</p>
+                    <p class="subtitle">Print all you can for your selected time period</p>
+                  </div>
+                  <p class="small_text">Contact us below to get started!</p>
+                  <div id="button_wrapper">
+                  <button class="red" id="inquire_button1">Contact Us Now</button>
+                          <script>
+                          $("#inquire_button1").click(function() {
+                              $('html,body').animate({
+                                  scrollTop: $("#inquiry_form").offset().top},
+                                  'slow');
+                          });
+                      </script>
+                  </div>
+              </div>
+          </div>
+
+          <div id="how_it_works">
+              <div id="top">
+                  <div id="workflow_title">
+                      <p class="title">How it Works</p>
+                  </div>
+                  <div id="step_0">
+                  </div>
+                  <div id="step_1">
+                      <p class="title_num">01</p>
+                      <p class="title">Contact Us</p>
+                      <p class="small_text">Send us an email or an inquiry form below to get started!</p>
+                  </div>
+                  <div id="step_2">
+                      <p class="title_num">02</p>
+                      <p class="title">We assess your printer needs</p>
+                      <p class="small_text">We will be setting up a quick interview with you to determine your printing requirements.</p>
+                  </div>
+                  <div id="step_3">
+                      <p class="title_num">03</p>
+                      <p class="title">Get your customized rental options</p>
+                      <p class="small_text">We will be providing printer rental options that are best suited for your needs!</p>
+                  </div>
+                  <div id="step_4">
+                      <p class="title_num">04</p>
+                      <p class="title">Get your printer delivered to you</p>
+                      <p class="small_text">After confirming rental terms and payment option, we will be delivering your printer straight to your doorstep ASAP.</p>
+                  </div>
+                  <div id="step_5">
+                  </div>
+              </div>
+
+              <div id="bottom">
+                  <button class="white" id="inquire_button2">Inquire for Printer Rental Now!</button>
+                                            <script>
+                          $("#inquire_button2").click(function() {
+                              $('html,body').animate({
+                                  scrollTop: $("#inquiry_form").offset().top},
+                                  'slow');
+                          });
+                      </script>
+              </div>
+          </div>
+
+          <div id="why_choose_asdi">
+              <div id="p_area">
+                  <p class="title">Why Choose ASDI</p>
+              </div>
+              <div id="icon_area">
+                  <div id="temp1"></div>
+
+                  <div id="icon1">
+                    <span class="dot_white"><img id="img_icon1" src="./images/icons/icon_response.svg"></span>
+                    <p class="subtitle">Quick Response</p>                    
+                  </div>
+
+                  <div id="icon2">
+                    <span class="dot_white"><img id="img_icon2" src="./images/icons/icon_printer_rental_delivery.svg"></span>           
+                    <p class="subtitle">Fast and Efficient Delivery</p>                    
+                  </div>
+                  <div id="icon3">
+                    <span class="dot_white"><img id="img_icon3" src="./images/icons/icon_flexible.svg"></span>               
+                    <p class="subtitle">Flexible Terms</p>                    
+                  </div>
+                  <div id="temp2"></div>
+              </div>
+          </div>
+
+          <div id="customer_reviews">
+              <p class="title">Customer Reviews</p>
+              <div class="moving_review active_div" id="first_review">
+                  <p class="small_text">"Flexible terms and flexible budget. Their sales rep has great service and quick to respond."</p>
+                  <br>
+                  <p class="subtitle">Mrs A.T.</p>
+              </div>
+
+              <div class="moving_review" id="second_review">
+                  <p class="small_text">"Got my money’s worth with wortking with them. Printers arrived in excellent condition."</p>
+                  <br>
+                  <p class="subtitle">Mr. J.T.</p>
+              </div>
+
+              <div class="moving_review" id="third_review">
+                  <p class="small_text">"Their personalizes printer delivery service made it convenient to handle our multiple branches." 
+                  <br>
+                  <p class="subtitle">Alonsco Holdings</p>
+              </div>
+              <span id="circle_buttons">
+                  <span class="dot active" id="first_dot"></span>
+                  <span class="dot" id="second_dot"></span>
+                  <span class="dot" id="third_dot"></span>
+              </span>
+
+              <!-- Javascript to handle dot behavior -->
+              <script type="text/javascript">
+                  var dotArea = document.getElementById("circle_buttons");
+                  var dots = dotArea.getElementsByClassName("dot");
+                  for (var i = 0; i < dots.length; i++) {
+                      dots[i].addEventListener("click", function() {
+                          var current = document.getElementsByClassName("active");
+                          current[0].className = current[0].className.replace(" active", "");
+                          this.className += " active";
+
+                          // Based on selected dot, show review text
+                          var current_review = document.getElementsByClassName("active_div");
+                          current_review[0].className = current_review[0].className.replace(" active_div", ""); 
+                          switch(this.id){
+                              case "first_dot":
+                                  document.getElementById("first_review").className += " active_div";
+                                  break;
+                              case "second_dot":
+                                  document.getElementById("second_review").className += " active_div";
+                                  break;
+                              case "third_dot":
+                                  document.getElementById("third_review").className += " active_div";
+                                  break;
+                          }
+                      });
+                  }
+              </script>
+          </div>
+
+
+          <div id="inquiry_form">
+              <p class="title">Inquire now!</p>
+              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+              <div id="name_input">
+                  <input  type="text" name="Name" placeholder="Name">
+              </div>
+              <div id="purpose_input">
+                  <input  type="text" name="Purpose" placeholder="Select Purpose">
+                  <!--<span class="dropbtn">
+                      <p>Purpose</p>
+                      <img src="./images/black_downpointing_triangle.svg">
+                      <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                      </div>
+                  </span> -->
+                  <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
+              </div>
+              <div id="email_input">
+                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div id="message_input">
+                  <textarea id="message_input" placeholder="Message"></textarea>
+              </div>
+              <div id="button_inquiry">
+                <button class="red">Send Now</button>
+              </div>
+          </div>
+      </body>
+
+      
+  </div>
+
+  </body>
+  <footer id="footer">
+      <div id="left_footer">
+      <img id="logo" src="./images/asdi-logo.svg">
+      <p>Copyright 2018 All Rights Reserved.</p>
+      <!-- facebook and google maps:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+      -->
+      </div>
+      <div id="right_footer">
+          <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>
+          <a href="https://goo.gl/maps/rHaNgKtZRjE2" class="fa fa-map-marker fa-2x" id="google_maps_icon_footer"></a>
+      </div>
+  </footer>
+</html>
