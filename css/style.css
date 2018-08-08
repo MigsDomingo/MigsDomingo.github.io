@@ -23,6 +23,11 @@ End Reset
 
 /* Global */
 
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 #global {
 	max-width: 1920px;
 	margin:auto;
@@ -246,6 +251,7 @@ h1 {
 #navigation a{
 	font-family: Roboto, sans-serif;
 	text-decoration: none;
+	color: #ff4545;
 	/*color: black;*/
 }
 
@@ -268,6 +274,14 @@ h1 {
 }
 
 #navigation_mobile {
+	display: none;
+}
+
+#side_menu {
+	width: 0;
+}
+
+#side_menu a{
 	display: none;
 }
 
@@ -682,7 +696,7 @@ h1 {
 
 #service_info #right {
 	display: inline-block;
-	width: 49%;
+	width: 50%;
     background: url('../images/printing_service.png');
 	/*background-size: contain;*/
 
@@ -1110,8 +1124,8 @@ h1 {
 		width: 48px;
 	}
 
-	#navigation_mobile .side_nav {
-		height: 100%;
+	#side_menu {
+		height: 200%;
 		position: fixed;
   		overflow-x:hidden;
   		background-color:#111;
@@ -1121,13 +1135,15 @@ h1 {
   		transition:0.5s;
 	}
 
-	#navigation_mobile .side_nav a{
-		padding:20px 10px 10px 10px;
+	#side_menu a{
+		margin-top: 30px;
+		margin-right: 40px;
+		display: block;
+		text-align: right;
 		text-decoration:none;
 		font-family: Roboto, sans-serif;
 		font-size:18px;
 		color:#ccc;
-		display:block;
 		/*animation-direction: reverse;*/
 		transition:0.3s;
 	}
@@ -1301,6 +1317,18 @@ h1 {
 		display: none;
 	}
 
+	#footer #left_footer {
+		width: 30%;
+	}
+
+	#footer #logo {
+		margin-left:40px;
+	}
+
+	#footer #copyright {
+		font-size: 6px;
+		margin-left:40px;
+	}
 
 }
 @media only screen and (max-width: 515px) {
@@ -1432,6 +1460,10 @@ h1 {
 		margin-left: 0;
 		float: left;
 		width: 90%;
+	}
+
+	#footer #right_footer {
+		margin-right: 25px;
 	}
 }
 
