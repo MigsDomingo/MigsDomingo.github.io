@@ -22,7 +22,7 @@
   </head>
   <body>
   
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -36,10 +36,10 @@
                   document.getElementsByTagName("header")[0].style.top = "0";
                   document.getElementsByTagName("header")[0].style.background = "linear-gradient(to left ,rgba(255,255,255,0.8), rgba(255,255,255,0.8))";
                   document.getElementsByTagName("header")[0].style.transition = "0.3s";
-                  //document.getElementById("header_div").style.top = "100px;";
+                } else if (document.getElementById('side_menu').style.width.indexOf('%') > 0) {
+                  //don't remove header if side menu is present
                 } else {
                   document.getElementsByTagName("header")[0].style.top = "-120px";
-                  //document.getElementById("header_div").style.top = "-120px";
                 }
                 prevScrollpos = currentScrollPos;
               }
@@ -68,43 +68,28 @@
                       <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
                       <i class="fa fa-bars" id="menu_section"></i>
 
-                      <div id="side_menu" class="side_nav">
+                      <script>
+                          function toggleSlideMenu() {
+
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                                  document.getElementById('side_menu').style.display = 'block';
+
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+              <div id="side_menu" class="side_nav">
                         <a href="index.html">Home</a>
                         <a href="products.html">Products</a>
                         <a href="printer_rental.html">Printer Rental</a>
                         <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact Us</a>
-                      </div>
-
-                      <!-- <script type="text/javascript"> -->
-                      <!--
-                      <script>
-                          function toggleSlideMenu() {
-                              console.log(document.getElementById('side_menu').style.width);
-                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
-                                  document.getElementById('side_menu').style.width = '0';
-                              }
-                              else {
-                                  document.getElementById('side_menu').style.width = '100%';
-                                  document.getElementById('navigation_mobile').style.width = '100%';
-                                  document.getElementById('navigation_mobile').style.textAlign = 'right';
-                              }
-                          }
-                      </script> -->
-
-                      <script>
-                          function toggleSlideMenu() {
-                              if (document.getElementsByTagName("header")[0].style.width.indexOf('%') > 0){
-                                  document.getElementsByTagName("header")[0].style.width = '0';
-                              }
-                              else {
-                                  document.getElementsByTagName("header")[0].style.width = '100%';
-                                  document.getElementsByTagName("header")[0].style.textAlign = 'right';
-                              }
-                          }
-                      </script>
-                  </a>
               </div>
           </header>
       </div>
@@ -126,7 +111,6 @@
                     }
 
                     $(document).ready(function(){
-                      //var header = $('body');
                       var backgrounds = new Array(
                         'url(./images/home_page_brother.png)',
                         'url(./images/home_page_canon.png)',
@@ -444,7 +428,7 @@
   <footer id="footer">
       <div id="left_footer">
       <img id="logo" src="./images/asdi-logo.svg">
-      <p>Copyright 2018 All Rights Reserved.</p>
+      <p id="copyright">Copyright 2018 All Rights Reserved.</p>
       <!-- facebook and google maps:
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
       -->

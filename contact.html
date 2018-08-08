@@ -62,34 +62,33 @@
                       </ul>
                   </nav>
               </div>
-              <div id="navigation_mobile">
+             <div id="navigation_mobile">
                   <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
                       <a href="javascript:void(0);" class="icon" onclick="toggleSlideMenu()">
                       <i class="fa fa-bars" id="menu_section"></i>
 
-                      <div id="side_menu" class="side_nav">
+                      <script>
+                          function toggleSlideMenu() {
+
+                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
+                                  document.getElementById('side_menu').style.width = '0';
+                              }
+                              else {
+                                  document.getElementById('side_menu').style.width = '100%';
+                                  document.getElementById('side_menu').style.display = 'block';
+
+                              }
+                          }
+                      </script>
+                  </a>
+              </div>
+              <div id="side_menu" class="side_nav">
                         <a href="index.html">Home</a>
                         <a href="products.html">Products</a>
                         <a href="printer_rental.html">Printer Rental</a>
                         <a href="https://www.facebook.com/asdidigitalprinting/" target="_blank">Printing Service</a>
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact Us</a>
-                      </div>
-
-                      <!-- <script type="text/javascript"> -->
-                      <script>
-                          function toggleSlideMenu() {
-                              console.log(document.getElementById('side_menu').style.width);
-                              if (document.getElementById('side_menu').style.width.indexOf('%') > 0){
-                                  console.log(document.getElementById('side_menu').style.width);
-                                  document.getElementById('side_menu').style.width = '0';
-                              }
-                              else {
-                                  document.getElementById('side_menu').style.width = '100%';
-                              }
-                          }
-                      </script>
-                  </a>
               </div>
           </header>
       </div>
@@ -166,7 +165,7 @@
   <footer id="footer">
       <div id="left_footer">
       <img id="logo" src="./images/asdi-logo.svg">
-      <p>Copyright 2018 All Rights Reserved.</p>
+      <p id="copyright">Copyright 2018 All Rights Reserved.</p>
       <!-- facebook and google maps:
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
       -->
