@@ -609,6 +609,86 @@ h1 {
 	margin-left: 0;
 }
 
+#why_choose_asdi {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 40px;
+	background-color: #f7f7f7;
+}
+
+#why_choose_asdi p{
+	text-align: center;
+}
+
+#why_choose_asdi #icon_area {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+#why_choose_asdi #icon_area #temp1{
+	/*display: inline-block;
+	width: 10%;
+	height: auto;*/
+}
+
+#why_choose_asdi #icon_area #icon1{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #icon_area #icon2{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #icon_area #icon3{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: auto;
+}
+
+#why_choose_asdi #temp2{
+	/*width: 10%;
+	height: auto;*/
+}
+
+#icon_area {
+	margin-bottom: 40px;
+}
+
+.dot_white {
+	height: 150px;
+	width: 150px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top; 
+    text-align: center;
+    text-decoration: none;
+}
+
+#icon1 img{
+	position: relative;
+	bottom: -45px;
+}
+
+#icon2 img{
+	position: relative;
+	bottom: -45px;
+}
+
+#icon3 img{
+	position: relative;
+	bottom: -45px;
+}
+
 #service_info {
 	width: 100%;
 	display: inline-block;
@@ -1268,6 +1348,20 @@ h1 {
 	  height: 100px;
 	}
 */
+}
+
+@media only screen and (max-width: 850px) {
+	#why_choose_asdi #icon_area	#icon1{
+		width: 100%;
+	}
+
+	#why_choose_asdi #icon_area	#icon2{
+		width: 100%;
+	}
+
+	#why_choose_asdi #icon_area	#icon3{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 730px) {

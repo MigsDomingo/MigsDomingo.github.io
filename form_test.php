@@ -1,17 +1,15 @@
 <html>
 <body>
 
-<?php echo $_POST["Name"]; ?><br>
-Client email address is: <?php echo $_POST["Email"]; ?><br>
-<?php echo $_POST["Purpose"]; ?><br>
-<?php echo $_POST["Message"]; ?><br>
+<?php 
+	$to = 'miguelcdomingo@gmail.com,hoppingsamurai@yahoo.com';
+	$name = $_POST["Name"];
+	$subject = $_POST["Purpose"];
+	$message = wordwrap($subject . "\n" . $_POST["Message"]);
+	$client_email_address = "From: " . $_POST["Email"] . "\r\n";
 
-<?php mail("miguelcdomingo@gmail.com,hoppingsamurai@yahoo.com", // to
-"ASDI Website Contact",
-
-//mail(to,subject,message,headers,parameters);
-//https://www.w3schools.com/php/func_mail_mail.asp
-$_POST["Message"]);
+	mail($to, $subject, $message, $client_email_address);
 ?>
+
 </body>
 </html>
