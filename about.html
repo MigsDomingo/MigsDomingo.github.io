@@ -141,62 +141,37 @@
           </div>
           
           <form action="form_test.php" method="post">
-          <div id="inquiry_form">
-              <p class="title">Inquire now!</p>
-              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
-              <div id="name_input">
-                  <input  type="text" name="Name" placeholder="Name">
+              <div id="inquiry_form">
+                  <p class="title">Inquire now!</p>
+                  <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+                  <div id="name_input">
+                      <input  type="text" name="Name" placeholder="Name">
+                  </div>
+                  <div id="purpose_input">
+                      <input  type="text" name="Purpose" placeholder="Purpose">
+                  </div>
+                  <div id="email_input">
+                      <input id="email_input" type="text" name="Email" placeholder="Email Address">
+                  </div>
+                  <div id="message_input">
+                      <textarea id="message_input" name="Message" placeholder="Message"></textarea>
+                  </div>
+                  <div id="button_inquiry">
+                    <button name="submit" type="submit" class="red">SEND NOW</button>
+                  </div>
               </div>
-              <div id="purpose_input">
-                  <input  type="text" name="Purpose" placeholder="Select Purpose">
-                  <!--<span class="dropbtn">
-                      <p>Purpose</p>
-                      <img src="./images/black_downpointing_triangle.svg">
-                      <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                      </div>
-                  </span> -->
-                  <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
-              </div>
-              <div id="email_input">
-                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
-              </div>
-              <div id="message_input">
-                  <textarea id="message_input" placeholder="Message"></textarea>
-              </div>
-              <div id="button_inquiry">
-                <button class="red">Send Now</button>
-              </div>
-          </div>
-        </form>
+          </form>
       </body>
 
       
   </div>
-  <!-- End -->
 
-  <!-- Load javascript only after DOM elements have finished loaded -->
-  <!-- 
-  <script type="text/javascript">
-   function autorun()
-   {
-    
-   }
-   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
-   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
-   else window.onload = autorun;
-  </script>
-  -->
   </body>
   <footer id="footer">
       <div id="left_footer">
       <img id="logo" src="./images/asdi-logo.svg">
       <p id="copyright">Copyright 2018 All Rights Reserved.</p>
-      <!-- facebook and google maps:
-        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
-      -->
+
       </div>
       <div id="right_footer">
           <a href="https://www.facebook.com/asdidigitalprinting/" class="fab fa-facebook-f fa-2x" id="facebook_icon_footer"></a>

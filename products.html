@@ -166,36 +166,47 @@
           </div>
 
           <form action="form_test.php" method="post">
-          <div id="inquiry_form">
-              <p class="title">Inquire now!</p>
-              <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
-              <div id="name_input">
-                  <input  type="text" name="Name" placeholder="Name">
+              <div id="inquiry_form">
+                  <p class="title">Inquire now!</p>
+                  <p class="subtitle">Got any questions or inquiries about our products and services? Contact us below.</p>
+                  <div id="name_input">
+                      <input  type="text" name="Name" placeholder="Name">
+                  </div>
+                  <div id="purpose_input">
+                      <input  type="text" name="Purpose" placeholder="Purpose">
+                  </div>
+                  <div id="email_input">
+                      <input id="email_input" type="text" name="Email" placeholder="Email Address">
+                  </div>
+                  <div id="message_input">
+                      <textarea id="message_input" name="Message" placeholder="Message"></textarea>
+                  </div>
+                  <script src='https://www.google.com/recaptcha/api.js'></script>
+                  <script>
+
+                  function get_action(form) 
+                  {
+                      var v = grecaptcha.getResponse();
+                      if(v.length == 0)
+                      {
+                          document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+                          return false;
+                      }
+                      else
+                      {
+                           document.getElementById('captcha').innerHTML="Captcha completed";
+                          return true; 
+                      }
+                  }
+
+                  </script>
+                  <div class="g-recaptcha" id="rcaptcha"  data-sitekey="site key"></div>
+                  <span id="captcha" style="color:red" /></span> <!-- this will show captcha errors -->
+                  <div id="button_inquiry">
+                    <button name="submit" type="submit" class="red">SEND NOW</button>
+                  </div>
               </div>
-              <div id="purpose_input">
-                  <input  type="text" name="Purpose" placeholder="Select Purpose">
-                  <!--<span class="dropbtn">
-                      <p>Purpose</p>
-                      <img src="./images/black_downpointing_triangle.svg">
-                      <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                      </div>
-                  </span> -->
-                  <!--<input id="type="text" name="Purpose" placeholder="Purpose">-->
-              </div>
-              <div id="email_input">
-                  <input id="email_input" type="text" name="Email" placeholder="Email Address">
-              </div>
-              <div id="message_input">
-                  <textarea id="message_input" placeholder="Message"></textarea>
-              </div>
-              <div id="button_inquiry">
-                <button class="red">Send Now</button>
-              </div>
-          </div>
-        </form>
+          </form>
       </body>
 
       
