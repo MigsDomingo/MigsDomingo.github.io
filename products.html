@@ -179,29 +179,8 @@
                       <input id="email_input" type="text" name="Email" placeholder="Email Address">
                   </div>
                   <div id="message_input">
-                      <textarea id="message_input" name="Message" placeholder="Message"></textarea>
+                      <textarea id="message_input" type="text" name="Message" placeholder="Message"></textarea>
                   </div>
-                  <script src='https://www.google.com/recaptcha/api.js'></script>
-                  <script>
-
-                  function get_action(form) 
-                  {
-                      var v = grecaptcha.getResponse();
-                      if(v.length == 0)
-                      {
-                          document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
-                          return false;
-                      }
-                      else
-                      {
-                           document.getElementById('captcha').innerHTML="Captcha completed";
-                          return true; 
-                      }
-                  }
-
-                  </script>
-                  <div class="g-recaptcha" id="rcaptcha"  data-sitekey="site key"></div>
-                  <span id="captcha" style="color:red" /></span> <!-- this will show captcha errors -->
                   <div id="button_inquiry">
                     <button name="submit" type="submit" class="red">SEND NOW</button>
                   </div>
